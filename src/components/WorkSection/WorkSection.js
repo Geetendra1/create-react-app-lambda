@@ -3,7 +3,7 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { selectedWork } from '../../data/selectedWork'
 import SelectedWorkCard from '../WorkSection/SelectedWorkCard';
 
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './WorkSection.css'
@@ -24,7 +24,7 @@ function useWindowSize() {
 
 function WorkSection() {
     const { theme } = useContext(ThemeContext);
-    const [width, height] = useWindowSize();
+    const [width] = useWindowSize();
 
     return (
         <>

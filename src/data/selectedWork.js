@@ -1,11 +1,11 @@
 import one from '../assets/svg/about/Rectangle 4.svg'
 import two from '../assets/svg/about/Rectangle 9.svg'
-import three from '../assets/svg/projects/three.svg'
-import four from '../assets/svg/projects/four.svg'
-import five from '../assets/svg/projects/five.svg'
-import six from '../assets/svg/projects/six.svg'
-import seven from '../assets/svg/projects/seven.svg'
-import eight from '../assets/svg/projects/eight.svg'
+// import three from '../assets/svg/projects/three.svg'
+// import four from '../assets/svg/projects/four.svg'
+// import five from '../assets/svg/projects/five.svg'
+// import six from '../assets/svg/projects/six.svg'
+// import seven from '../assets/svg/projects/seven.svg'
+// import eight from '../assets/svg/projects/eight.svg'
 
 export const selectedWork = [
     {
@@ -71,7 +71,6 @@ export const selectedWork = [
         slug:'employee-management',
 
         projectName: 'Uber Lite',
-        projectDesc: 'Uber clone',
         projectShortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.', 
         projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
         tags: ['Flutter'],

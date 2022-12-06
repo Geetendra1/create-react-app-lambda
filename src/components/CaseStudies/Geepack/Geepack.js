@@ -1,5 +1,4 @@
-import React,{ useContext,useLayoutEffect, useState} from 'react';
-import { ThemeContext } from '../../../contexts/ThemeContext';
+import React,{ useLayoutEffect, useState} from 'react';
 import one from '../../../assets/svg/about/geepack-hero .svg'
 import two from '../../../assets/svg/about/pain.svg'
 import three from '../../../assets/svg/about/cubes 9 2.svg'
@@ -13,7 +12,6 @@ import ten from '../../../assets/svg/about/tab bar content (1).svg'
 import eleven from '../../../assets/svg/about/scan baggage.svg'
 import twelve from '../../../assets/svg/about/Group 36173.svg'
 import thirteen from '../../../assets/svg/about/status.svg'
-import fourteen from '../../../assets/svg/about/ss + wt + ob.svg'
 import fifteen from '../../../assets/svg/about/UI 9.svg'
 import sixteen from '../../../assets/svg/about/UI 10.svg'
 
@@ -38,8 +36,7 @@ function useWindowSize() {
   }
 
 const Geepack = () => {
-    const { theme } = useContext(ThemeContext);
-    const [width, height] = useWindowSize();
+    const [width] = useWindowSize();
 
 
 console.log('width: ' + width );

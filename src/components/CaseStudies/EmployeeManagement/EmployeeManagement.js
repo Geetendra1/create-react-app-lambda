@@ -1,5 +1,4 @@
-		import React,{ useContext,useLayoutEffect, useState} from 'react';
-		import { ThemeContext } from '../../../contexts/ThemeContext';
+		import React,{useLayoutEffect, useState} from 'react';
 		import './EmployeeManagement.css'
 		import one from '../../../assets/svg/about/hero.svg'
 		import first from '../../../assets/svg/about/old user flow.svg'
@@ -35,8 +34,7 @@
 		  }
 		
 		const EmployeeManagement = () => {
-				const { theme } = useContext(ThemeContext);
-				const [width, height] = useWindowSize();
+				const [width] = useWindowSize();
 
 			return (
 				<>
