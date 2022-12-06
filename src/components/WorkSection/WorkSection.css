@@ -1,0 +1,51 @@
+.work--header {
+    display: flex;
+    align-items: start;
+    justify-content: start;    
+    width: 100%;
+    margin: 1rem;
+    color: red
+}
+.work-continer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.work-column {
+    background-color: red;
+    padding: 3rem;
+}
+
+/* @media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 400px) {
+
+} */
+
+@media screen and (max-width: 992px) {
+    .work--header {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 100%;
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 400px) {
+
+}

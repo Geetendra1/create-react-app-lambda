@@ -1,50 +1,40 @@
-import React, { Component } from "react"
-import logo from "./logo.svg"
-import "./App.css"
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import { Footer, Navbar} from './components'
 
-class LambdaDemo extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { loading: false, msg: null }
-  }
+import { ThemeContext } from './contexts/ThemeContext';
+import { Main, BlogPage, ProjectPage,CaseStudyPage } from './pages'
+import { BackToTop } from './components'
+import ScrollToTop from './utils/ScrollToTop'
+// import history from './history';
+import './App.css'
 
-  handleClick = api => e => {
-    e.preventDefault()
 
-    this.setState({ loading: true })
-    fetch("/.netlify/functions/" + api)
-      .then(response => response.json())
-      .then(json => this.setState({ loading: false, msg: json.msg }))
-  }
+const App = () => {
 
-  render() {
-    const { loading, msg } = this.state
+  const { theme } = useContext(ThemeContext);
+  console.log('theme',theme);
+  // console.log("%chttps://github.com/hhhrrrttt222111/developer-portfolio", `color:${theme.tertiary}; font-size:20px`);
+  // console.log = console.warn = console.error = () => {};
 
-    return (
-      <p>
-        <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
-        <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
-        <br />
-        <span>{msg}</span>
-      </p>
-    )
-  }
+  return (
+    <div className="app">
+      <Router>
+        <ScrollToTop/>
+        <Navbar/>
+        <Switch>
+          <Route path="/" exact component={Main} />
+          <Route path="/blog" exact component={BlogPage} />
+          <Route path="/projects" exact component={ProjectPage}/>
+          <Route path="/case-study/:id" exact component={CaseStudyPage}/>
+          <Redirect to="/" />
+        </Switch>
+        <Footer/>
+
+      </Router>
+      <BackToTop />
+    </div>
+  );
 }
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-             <code>src/App.js</code> and save to reload.
-          </p>
-          <LambdaDemo />
-        </header>
-      </div>
-    )
-  }
-}
-
-export default App
+export default App;
