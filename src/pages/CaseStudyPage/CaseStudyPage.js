@@ -6,6 +6,7 @@ import { withRouter } from 'react-router-dom';
 // import Col from 'react-bootstrap/Col';
 import EmployeeManagement from '../../components/CaseStudies/EmployeeManagement/EmployeeManagement';
 import Geepack from '../../components/CaseStudies/Geepack/Geepack';
+import CaseStudyNav from '../../components/Navbar/CaseStudyNav'
 const CaseStudyPage = ({history}) => {
     const lastSegment = history.location.pathname.split("/").pop()
     console.log('lastSegment',lastSegment);
@@ -13,6 +14,7 @@ const CaseStudyPage = ({history}) => {
 
   return (
     <>
+    <CaseStudyNav/>
     {lastSegment === 'employee-management' && (
       <EmployeeManagement/>
     )}

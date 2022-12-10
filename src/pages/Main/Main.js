@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Landing, WorkSection } from '../../components'
+import { Landing, WorkSection ,Navbar} from '../../components'
 import { headerData } from '../../data/headerData'
 
 function Main() {
@@ -11,7 +11,7 @@ function Main() {
                 <title>{headerData.name} - Porfolio</title>
             </Helmet>
 
-            {/* <Navbar />         */}
+            <Navbar />        
             <Landing />
             <WorkSection/>
             {/* <About /> */}

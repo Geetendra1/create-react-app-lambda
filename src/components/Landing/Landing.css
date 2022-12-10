@@ -56,7 +56,6 @@
 .landing--container-right {
   flex: 65%;
   height: 100%;
-  background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -64,8 +63,8 @@
 }
 
 .lcr--content {
-  width: 45%;
-  margin-right: 7rem;
+  width: 65%;
+  margin-right: 3rem;
   font-family: var(--primaryFont);
   font-style: normal;
 }

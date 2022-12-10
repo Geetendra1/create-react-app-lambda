@@ -15,6 +15,7 @@ import {
     FaYoutube,
     FaBlogger,
 } from 'react-icons/fa';
+import Navbar from '../Navbar/Navbar';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -70,6 +71,8 @@ function Landing() {
     // const classes = useStyles();
 
     return (
+        <>
+        <Navbar/>
         <div className='landing'>
             <div className='landing--container'>
                 <div
@@ -162,8 +165,8 @@ function Landing() {
                         style={{ color: theme.tertiary }}
                     >
                         <p>Hi 👋</p>
-                        {/* <h6>{headerData.title}</h6> */}
-                        <span style={{display:'flex'}}><span className=''></span><h3>{headerData.name}</h3></span>
+                        <h3>{headerData.title}</h3>
+                        {/* <span style={{display:'flex'}}><span className=''></span><h3>{headerData.name}</h3></span> */}
                         <p>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
                         <p>Currently pursuing MS in Human-Computer Interaction @ Indiana University - Purdue University Indianapolis, United States.</p>
                         <p>I previously have designed products at Cliff.ai (GTM Hub) & Nickelfox Technologies.</p>
@@ -197,6 +200,8 @@ function Landing() {
                 </div>
             </div>
         </div>
+        </>
+
     );
 }
 

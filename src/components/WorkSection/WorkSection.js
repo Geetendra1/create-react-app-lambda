@@ -25,7 +25,7 @@ function useWindowSize() {
 function WorkSection() {
     const { theme } = useContext(ThemeContext);
     const [width] = useWindowSize();
-
+  console.log('themesssss',theme);
     return (
         <>
                  <div className="projects" id="projects" style={{backgroundColor: theme.secondary}}>

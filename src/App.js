@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-do
 import { Footer, Navbar} from './components'
 
 import { ThemeContext } from './contexts/ThemeContext';
-import { Main, BlogPage, ProjectPage,CaseStudyPage } from './pages'
+import { Main,CaseStudyPage } from './pages'
 import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
 // import history from './history';
@@ -21,11 +21,11 @@ const App = () => {
     <div className="app">
       <Router>
         <ScrollToTop/>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Switch>
           <Route path="/" exact component={Main} />
-          <Route path="/blog" exact component={BlogPage} />
-          <Route path="/projects" exact component={ProjectPage}/>
+          {/* <Route path="/blog" exact component={BlogPage} /> */}
+          {/* <Route path="/projects" exact component={ProjectPage}/> */}
           <Route path="/case-study/:id" exact component={CaseStudyPage}/>
           <Redirect to="/" />
         </Switch>
