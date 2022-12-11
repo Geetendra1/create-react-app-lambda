@@ -1,6 +1,14 @@
 :root {
-    --primaryFont: 'Poppins', sans-serif;
-    /* --primaryFont: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat';
+    /* --primaryFont: 'Poppins', sans-serif; */
+    --primaryFont: 'Montserrat';
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
+.small-text {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+}

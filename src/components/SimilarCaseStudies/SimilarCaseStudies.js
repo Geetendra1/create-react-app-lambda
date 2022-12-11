@@ -7,8 +7,7 @@ import SelectedWorkCard from '../WorkSection/SelectedWorkCard';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
-import SimilarCaseStudies from '../../components/SimilarCaseStudies/SimilarCaseStudies'
-import './WorkSection.css'
+import '../WorkSection/WorkSection.css'
 
 
 function useWindowSize() {
@@ -24,7 +23,8 @@ function useWindowSize() {
     return size;
   }
 
-function WorkSection() {
+function SimilarCaseStudies(props) {
+    const data = props.data
     const { theme } = useContext(ThemeContext);
     const [width] = useWindowSize();
     return (
@@ -34,47 +34,27 @@ function WorkSection() {
                          <h1 className='work-container-selected-work-header' style={{color: theme.tertiary}} >Selected Work</h1>
                     </div>
                     <Row className='m-0 p-5 pt-3' >
-                           {selectedWork.slice(0, 2).map(work => (
-                            <Col lg={6} md={12} sm={12} className="p-lg-5 pt-lg-0">
+                           {data.slice(0, 3).map(work => (
+                            <Col lg={4} md={12} sm={12} className="p-lg-5 pt-lg-0">
                             <SelectedWorkCard  
                             theme={theme}
                             key={work.id}
                             slug={work.slug}
                                         id={work.id}
                                         projectName={work.projectName}
-                                        projectDesc={work.projectDesc}
-                                        projectShortDesc={work.projectShortDesc}
+                                        projectDesc={work.projectDesc.slice(0,50)}
+                                        projectShortDesc={work.projectShortDesc.slice(0,100)}
                                         image={work.image}/>
                             </Col>
                         ))}
                    </Row>
                    </div>
                    {/* side projects */}
-                   <div id="projects m-0" style={{backgroundColor: theme.secondary}}>
-                     <div className="side-work--header">
-                         <h1 className='work-container-selected-work-header' style={{color: theme.tertiary}} >Side Projects</h1>
-                    </div>
-                    <Row className='m-0 p-5 pt-3' >
-                           {selectedWork.slice(0, 4).map(work => (
-                            <Col lg={6} md={12} sm={12} className="p-lg-5 pt-lg-0">
-                            <SelectedWorkCard  
-                            theme={theme}
-                            key={work.id}
-                            slug={work.slug}
-                                        id={work.id}
-                                        projectName={work.projectName}
-                                        projectDesc={work.projectDesc}
-                                        projectShortDesc={work.projectShortDesc}
-                                        image={work.image}/>
-                            </Col>
-                        ))}
-                   </Row>
-                   </div>
+                   
 
-                   {/* <SimilarCaseStudies/> */}
 
         </>
     )
 }
 
-export default WorkSection
+export default SimilarCaseStudies

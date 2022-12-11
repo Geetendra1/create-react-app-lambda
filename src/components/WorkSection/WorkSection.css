@@ -2,9 +2,14 @@
     display: flex;
     align-items: start;
     justify-content: start;    
-    width: 100%;
-    margin: 1rem;
-    color: red
+    margin-left: 6rem;
+    padding-top: 5rem;
+}
+.side-work--header{
+    display: flex;
+    align-items: start;
+    justify-content: start;    
+    margin-left: 6rem;
 }
 .work-continer {
     display: flex;
@@ -12,10 +17,38 @@
     justify-content: center; 
 }
 
-.work-column {
-    background-color: red;
-    padding: 3rem;
+.work-container-selected-work-header {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
 }
+.selected-work-heading {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+/* line-height: 36px; */
+}
+
+.selected-work-subheading {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+/* line-height: 36px; */
+}
+
+.selected-work-description {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+/* line-height: 28px; */
+}
+
+
 
 /* @media screen and (max-width: 992px) {
 }
@@ -35,17 +68,73 @@
         display: flex;
         align-items: center;
         justify-content: center;    
-        width: 100%;
-        margin: 2rem;
+        /* margin: 3rem; */
+        margin-left: 0;
+
+    }
+    .side-work--header {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        /* margin: 3rem; */
+        margin-left: 0;
+
+    }
+    .word-card-col{
+        margin-top: 100px;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .work--header {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        /* margin: 3rem; */
+        margin-left: 0;
+
+    }
+    .side-work--header {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        /* margin: 3rem; */
+        margin-left: 0;
+
+    }
+    .selected-work-subheading {
+        font-size: 16px;
+    }
+    .selected-work-description {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .work--header {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        margin-left: 0;
+    }
+    .side-work--header {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        /* margin: 3rem; */
+        margin-left: 0;
+
+    }
 }
 
 @media screen and (max-width: 400px) {
+    .work--header {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        /* margin: 3rem; */
+        margin-left: 0;
+
+    }
 
 }

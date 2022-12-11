@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 // import { Button } from '@material-ui/core';
 // import { NavHashLink as NavLink } from 'react-router-hash-link';
 // import { makeStyles } from '@material-ui/core/styles';
@@ -8,6 +8,9 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container'
 import {
     FaTwitter,
     FaLinkedin,
@@ -16,11 +19,24 @@ import {
     FaBlogger,
 } from 'react-icons/fa';
 import Navbar from '../Navbar/Navbar';
+import { 
+    darkTheme, lightTheme
+  } from '../../theme/theme'
 
 function Landing() {
-    const { theme, drawerOpen } = useContext(ThemeContext);
+    const { theme, drawerOpen, } = useContext(ThemeContext);
+    const [themes, setThemes] = useState(theme)
 
-    console.log('theme',theme);
+    useEffect(() => {
+        const themess =  localStorage.getItem('theme')
+        console.log('themess',themess);
+        if(themess === 'dark') {
+         setThemes(darkTheme)
+     } else {
+         setThemes(lightTheme)
+     }
+       }, [localStorage.getItem('theme')])
+    console.log('Landing',themes);
 
     // const useStyles = makeStyles((t) => ({
     //     resumeBtn: {
@@ -79,8 +95,16 @@ function Landing() {
                     className='landing--container-left'
                     style={{ backgroundColor: theme.primary }}
                 >
+                    
                     <div className='lcl--content'>
-                        {socialsData.linkedIn && (
+                    <Row className='w-100'>
+                        <Col md={12} className="d-flex justify-content-center">
+                            <Row>
+                                <Col className='col-auto disable-on-sm '>
+                                <small style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }} >find me on :</small>
+                                </Col>
+                                <Col className='p-0'>
+                            {socialsData.linkedIn && (
                             <a
                                 href={socialsData.linkedIn}
                                 target='_blank'
@@ -145,6 +169,21 @@ function Landing() {
                                 />
                             </a>
                         )}
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col md={12} className="d-flex justify-content-center">
+                        <Row>
+                                <Col className='col-auto disable-on-sm'>
+                                <small  style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }}>Reach out to me :</small>
+                                </Col>
+                                <Col className='p-0'>
+                                    <small style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }} className="left-section-strong">swati.pal2804@gmail.com</small>
+                                </Col>
+                                </Row>
+                        </Col>
+                    </Row>
+                        
                     </div>
                 </div>
                 <img
@@ -164,12 +203,12 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: theme.tertiary }}
                     >
-                        <p>Hi 👋</p>
-                        <h3>{headerData.title}</h3>
+                        <p className='right-section-p'>Hi 👋</p>
+                        <h3><span className='right-section-p'>I'm</span> {headerData.name}</h3>
                         {/* <span style={{display:'flex'}}><span className=''></span><h3>{headerData.name}</h3></span> */}
-                        <p>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
-                        <p>Currently pursuing MS in Human-Computer Interaction @ Indiana University - Purdue University Indianapolis, United States.</p>
-                        <p>I previously have designed products at Cliff.ai (GTM Hub) & Nickelfox Technologies.</p>
+                        <p className='right-section-p'>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
+                        <p className='right-section-p'>Currently pursuing MS in Human-Computer Interaction @<strong> Indiana University - Purdue University Indianapolis, United States.</strong> </p>
+                        <p className='right-section-p'>I previously have designed products at Cliff.ai (GTM Hub) & Nickelfox Technologies.</p>
                         {/* <p>{headerData.desciption}</p> */}
 
                         {/* <div className='lcr-buttonContainer'>

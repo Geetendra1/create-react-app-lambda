@@ -1,4 +1,4 @@
-		import React,{useLayoutEffect, useState} from 'react';
+		import React,{useLayoutEffect, useState,useEffect} from 'react';
 		import './EmployeeManagement.css'
 		import one from '../../../assets/svg/about/hero.svg'
 		import first from '../../../assets/svg/about/old user flow.svg'
@@ -19,7 +19,10 @@
 		import Image from 'react-bootstrap/Image'
 		import Row from 'react-bootstrap/Row';
 		import Col from 'react-bootstrap/Col';
-
+		import { ThemeContext } from '../../../contexts/ThemeContext';
+		import { 
+			darkTheme, lightTheme
+		  } from '../../../theme/theme'
 		function useWindowSize() {
 			const [size, setSize] = useState([0, 0]);
 			useLayoutEffect(() => {
@@ -33,11 +36,19 @@
 			return size;
 		  }
 		
-		const EmployeeManagement = () => {
-				const [width] = useWindowSize();
+		const EmployeeManagement = (props) => {
+			// const [theme,setTheme] = useState(null)
+			// useEffect(() => {
+			// 	const themes = localStorage.getItem('theme')
 
+			// }, [])
+			
+			// const { theme, setTheme} = useContext(ThemeContext);
+			const [width] = useWindowSize();
+			const themes = props.themes
+				console.log('EmployeeManagement', themes);
 			return (
-				<>
+				<div style={{backgroundColor: themes.secondary}}>
 				<div style={{width:"100%", height:"100%"}} >
 					<Image src={one} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 				</div>
@@ -95,7 +106,7 @@
 				</Container>
 
 				{/* rest of the case study */}
-				<Container className='mt-5' style={{width: width >= 1000 ?  "60%" : " 90%"}}>
+				<Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
 					<Row className="">
 							<Col md={12}>
 								<h3>Cliff.ai overview</h3>
@@ -358,7 +369,7 @@
 
 				</Container>
 
-				</>
+				</div>
 
 			)
 		}

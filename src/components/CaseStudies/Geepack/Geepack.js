@@ -101,7 +101,7 @@ console.log('width: ' + width );
 				</Container>
 
                 {/* rest of the case study */}
-				<Container className='mt-5' style={{width: width >= 1000 ?  "60%" : " 90%"}}>
+				<Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
 					<Row className="" >
 							<Col md={12}>
 								<h3>Why did I pick up this project?</h3>
@@ -222,8 +222,8 @@ console.log('width: ' + width );
                  </Container>
 
                  <Row className='g-second-container pb-5' style={{width:"100%"}}>
-                    <Col className='d-flex justify-content-center' md={12}>
-                    <Row className="mt-4" style={{width: width >= 1000 ?  "25%" : " 90%"}}>
+                    <Col className='d-flex justify-content-center' md={12} >
+                    <Row className={`mt-5 text-center ${width > 1000 ? "w-25" : "w-75"}`}>
 							<Col md={12}>
 								<h3>Tab Bar</h3>
                                 <p>After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
@@ -233,26 +233,26 @@ console.log('width: ' + width );
 					</Row>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                    <Row className="mt-4" style={{width: width >= 1000 ?  "50%" : " 100%"}}  >
+                    <Row className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}  >
                     <Image src={ten} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                     </Row>
                     </Col>
                  </Row>
 
-                 <Container className='mt-5' style={{width: width >= 1000 ?  "60%" : " 100%"}}>
+                 <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
                  <Image src={eleven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 
                  <Row className='g-second-container pb-5 mt-5' style={{width:"100%"}}>
                     <Col className='d-flex justify-content-center'>
-                    <Row className="mt-4"  style={{width: width >= 1000 ?  "60%" : " 100%"}}>
+                    <Row className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
                     <Image src={twelve} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                     </Row>
                     </Col>
                  </Row>
 
 
-                 <Container className='mt-5'  style={{width: width >= 1000 ?  "60%" : " 100%"}}>
+                 <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
                  <Image src={thirteen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 

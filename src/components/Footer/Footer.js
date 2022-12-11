@@ -98,8 +98,8 @@ function Footer() {
                             </a>
                         )}
             </div>
-            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="footer-small-text">Reach out to me : </small> <p style={{marginLeft:'10px', fontSize:'20px'}}>swati.pal2804@gmail.com</p></div>
-            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="footer-small-text">ADPList Mentorship : </small> <p style={{marginLeft:'10px', fontSize:'20px'}}>Book a session with me on ADPList</p></div>
+            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="footer-small-text">Reach out to me : </small> <p style={{marginLeft:'10px'}} className="section-p" >swati.pal2804@gmail.com</p></div>
+            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="footer-small-text">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="section-p">Book a session with me on <u>ADPList</u></p></div>
 
         </div>
     )

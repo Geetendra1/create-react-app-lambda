@@ -9,6 +9,14 @@
     width: 100%;
 }
 
+.navbar--container-p {
+font-family: 'Merriweather';
+font-style: normal;
+/* font-weight: ; */
+font-size: 40px;
+/* line-height: 72px; */
+}
+
 .navbar--container {
     display: flex;
     align-items: center;

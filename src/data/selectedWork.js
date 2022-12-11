@@ -17,7 +17,8 @@ export const selectedWork = [
         tags: ['React', 'CSS', 'Material Ui'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: one,
+        label : 'selected-work'
     },
     {
         id: 2,
@@ -28,11 +29,12 @@ export const selectedWork = [
         tags: ['Django', 'Tailwind CSS'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: two
+        image: two,
+        label : 'selected-work'
     },
     {
         id: 3,
-        slug:'employee-management',
+        slug:'mds',
 
         projectName: 'Weather App',
         projectShortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.', 
@@ -40,19 +42,21 @@ export const selectedWork = [
         tags: ['Django', 'CSS', 'Material Ui'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: one,
+        label : 'side-work'
     },
     {
         id: 4,
-        slug:'employee-management',
+        slug:'other',
 
-        projectName: 'Android Patient Tracker',
+        projectName: 'Android App',
         projectShortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.', 
         projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
         tags: ['Flutter', 'Firebase'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: one,
+        label : 'side-work'
     },
     {
         id: 5,
@@ -64,7 +68,8 @@ export const selectedWork = [
         tags: ['React Native', 'Firebase'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: one,
+        label : 'side-work'
     },
     {
         id: 6,
@@ -76,7 +81,8 @@ export const selectedWork = [
         tags: ['Flutter'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: one,
+        label : 'side-work'
     },
     {
         id: 7,
@@ -87,7 +93,8 @@ export const selectedWork = [
         tags: ['React', 'Redux', 'Bootstrap'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: one,
+        label : 'side-work'
     },
     {
         id: 8,
@@ -98,6 +105,7 @@ export const selectedWork = [
         tags: ['Flutter', 'React'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: one,
+        label : 'side-work'
     },
 ]

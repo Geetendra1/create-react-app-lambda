@@ -34,9 +34,11 @@ function Navbar() {
     const handleTheme = () => {
         console.log('theme',theme);
         if(theme.type === 'dark') {
+            localStorage.setItem('theme', 'light')
             setTheme(lightTheme)
         } else {
             setTheme(darkTheme)
+            localStorage.setItem('theme', 'dark')
         }
     }
 
@@ -163,9 +165,9 @@ function Navbar() {
     return (
         <div className='navbar-s' >
             <div className='navbar--container'>
-                <h1 style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary   }}>
+                <p className='navbar--container-p ' style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary   }}>
                     {shortname(headerData.name)}
-                </h1>
+                </p>
 
 
                 <IoMenuSharp
