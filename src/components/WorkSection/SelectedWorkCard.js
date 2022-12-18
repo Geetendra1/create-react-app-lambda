@@ -13,8 +13,8 @@ function SelectedWorkCard({ theme, key,id, slug,projectName, projectDesc, projec
                 </div>
                 <div className="singleBlog--body">
                     <h3 className='mt-3 selected-work-heading' style={{color: theme.tertiary}}>{projectName}</h3>
-                    <p style={{color: theme.tertiary}} className="selected-work-subheading">{projectDesc}</p>
-                    <p style={{color: theme.tertiary}} className="selected-work-description">{projectShortDesc}</p>  
+                    <p style={{color: theme.tertiary}} className="para1">{projectDesc}</p>
+                    <p style={{color: theme.tertiary}} className="para2">{projectShortDesc}</p>  
                 </div>
             </a>
         </Fade>
