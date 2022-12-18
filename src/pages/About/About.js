@@ -43,7 +43,7 @@ const About = () => {
        }, [themechnage])
 
   return (
-    <div style={{backgroundColor:themes.primary}}>
+    <div style={{backgroundColor:themes.secondary}}>
         <CaseStudyNav />
 
         <div className='hero-section' style={{width:"100%", height:"560px", backgroundColor:themes.primary}}  >
@@ -54,7 +54,7 @@ const About = () => {
                     alt=''
                     className='hero--img'
                 />
-                <div className='hero-right' style={{color: 'white'}}>
+                <div className='hero-right mt-5' style={{color: 'white'}}>
                     <p className='heading5'>The philosphy I follow</p>
                     <h1 className='heading0'>The only way to do great work is to do what you love & love what you do.</h1>
                 </div>

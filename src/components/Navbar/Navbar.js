@@ -189,10 +189,10 @@ function Navbar() {
                 />
                 
                 <div className={classes.navMenuOpen}>
-                    <div className={classes.navMenuOpenItems}>Home</div>
+                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>Home</div></a>
                     <div className={classes.navMenuOpenItems}>Work</div>
                     <div className={classes.navMenuOpenItems}>Resume</div>
-                    <div className={classes.navMenuOpenItems}>About Me</div>
+                    <a href='/about' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>About Me</div></a>
                     <img onClick={handleTheme} src={theme.themeLogo} alt="s" />
                 </div>
                 
