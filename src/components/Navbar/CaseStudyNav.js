@@ -20,6 +20,7 @@ function CaseStudyNav() {
     const [themes, setThemes] = useState(theme)
 
     const [open, setOpen] = useState(false);
+    const themeChange = localStorage.getItem('theme')
 
 
     useEffect(() => {
@@ -30,7 +31,7 @@ function CaseStudyNav() {
      } else {
          setThemes(lightTheme)
      }
-       }, [localStorage.getItem('theme')])
+       }, [themeChange])
     
     
     const handleDrawerOpen = () => {

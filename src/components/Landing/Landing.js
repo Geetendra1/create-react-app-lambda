@@ -25,6 +25,7 @@ import {
 function Landing() {
     const { theme, drawerOpen, } = useContext(ThemeContext);
     const [themes, setThemes] = useState(theme)
+    const themeChange = localStorage.getItem('theme')
 
     useEffect(() => {
         const themess =  localStorage.getItem('theme')
@@ -33,7 +34,7 @@ function Landing() {
      } else {
          setThemes(lightTheme)
      }
-       }, [localStorage.getItem('theme')])
+       }, [themeChange])
 
 
     return (

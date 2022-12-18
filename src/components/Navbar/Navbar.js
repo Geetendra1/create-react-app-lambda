@@ -18,6 +18,7 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 function Navbar() {
     const { theme, setHandleDrawer ,setTheme } = useContext(ThemeContext);
     const [themes, setThemes] = useState(theme)
+    const themeChange = localStorage.getItem('theme')
 
     const [open, setOpen] = useState(false);
 
@@ -40,7 +41,7 @@ function Navbar() {
      } else {
          setThemes(lightTheme)
      }
-       }, [localStorage.getItem('theme')])
+       }, [themeChange])
 
     const handleTheme = () => {
         if(theme.type === 'dark') {

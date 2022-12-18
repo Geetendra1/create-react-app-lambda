@@ -27,7 +27,8 @@ function Footer() {
     const [themes, setThemes] = useState(theme)
 
     const textColor  = themes.type === 'light' ? themes.secondary : themes.tertiary
-    
+    const themeChange = localStorage.getItem('theme')
+
     useEffect(() => {
         const themess =  localStorage.getItem('theme')
         if(themess === 'dark') {
@@ -35,7 +36,7 @@ function Footer() {
      } else {
          setThemes(lightTheme)
      }
-       }, [localStorage.getItem('theme')])
+       }, [themeChange])
     return (
         <div className="footer" style={{backgroundColor: themes.primary}}>
             <p style={{color: textColor}}>

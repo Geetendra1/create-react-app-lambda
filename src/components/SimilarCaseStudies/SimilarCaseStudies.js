@@ -29,7 +29,7 @@ function SimilarCaseStudies(props) {
     const data = props.data
     const { theme } = useContext(ThemeContext);
     const [themes, setThemes] = useState(theme)
-
+    const themeChange = localStorage.getItem('theme')
     // const [width] = useWindowSize();
 
     useEffect(() => {
@@ -39,7 +39,7 @@ function SimilarCaseStudies(props) {
    } else {
        setThemes(lightTheme)
    }
-     }, [localStorage.getItem('theme')])
+     }, [themeChange])
     return (
         <>
                  <div id="projects" style={{backgroundColor: themes.secondary}}>
