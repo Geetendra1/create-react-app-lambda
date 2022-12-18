@@ -10,7 +10,6 @@ import { socialsData } from '../../data/socialsData';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container'
 import {
     FaTwitter,
     FaLinkedin,
@@ -29,62 +28,13 @@ function Landing() {
 
     useEffect(() => {
         const themess =  localStorage.getItem('theme')
-        console.log('themess',themess);
         if(themess === 'dark') {
          setThemes(darkTheme)
      } else {
          setThemes(lightTheme)
      }
        }, [localStorage.getItem('theme')])
-    console.log('Landing',themes);
 
-    // const useStyles = makeStyles((t) => ({
-    //     resumeBtn: {
-    //         color: theme.primary,
-    //         borderRadius: '30px',
-    //         textTransform: 'inherit',
-    //         textDecoration: 'none',
-    //         width: '150px',
-    //         fontSize: '1rem',
-    //         fontWeight: '500',
-    //         height: '50px',
-    //         fontFamily: 'var(--primaryFont)',
-    //         border: `3px solid ${theme.primary}`,
-    //         transition: '100ms ease-out',
-    //         '&:hover': {
-    //             backgroundColor: theme.tertiary,
-    //             color: theme.secondary,
-    //             border: `3px solid ${theme.tertiary}`,
-    //         },
-    //         [t.breakpoints.down('sm')]: {
-    //             width: '180px',
-    //         },
-    //     },
-    //     contactBtn: {
-    //         backgroundColor: theme.primary,
-    //         color: theme.secondary,
-    //         borderRadius: '30px',
-    //         textTransform: 'inherit',
-    //         textDecoration: 'none',
-    //         width: '150px',
-    //         height: '50px',
-    //         fontSize: '1rem',
-    //         fontWeight: '500',
-    //         fontFamily: 'var(--primaryFont)',
-    //         border: `3px solid ${theme.primary}`,
-    //         transition: '100ms ease-out',
-    //         '&:hover': {
-    //             backgroundColor: theme.secondary,
-    //             color: theme.tertiary,
-    //             border: `3px solid ${theme.tertiary}`,
-    //         },
-    //         [t.breakpoints.down('sm')]: {
-    //             display: 'none',
-    //         },
-    //     },
-    // }));
-
-    // const classes = useStyles();
 
     return (
         <>
@@ -93,7 +43,7 @@ function Landing() {
             <div className='landing--container'>
                 <div
                     className='landing--container-left'
-                    style={{ backgroundColor: theme.primary }}
+                    style={{ backgroundColor: themes.primary }}
                 >
                     
                     <div className='lcl--content'>
@@ -101,7 +51,7 @@ function Landing() {
                         <Col md={12} className="d-flex justify-content-center">
                             <Row>
                                 <Col className='col-auto disable-on-sm '>
-                                <small style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }} >find me on :</small>
+                                <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} >find me on :</small>
                                 </Col>
                                 <Col className='p-0'>
                             {socialsData.linkedIn && (
@@ -112,7 +62,7 @@ function Landing() {
                             >
                                 <FaLinkedin
                                     className='landing--social'
-                                    style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary }}
+                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary }}
                                     aria-label='LinkedIn'
                                 />
                             </a>
@@ -125,7 +75,7 @@ function Landing() {
                             >
                                 <FaGithub
                                     className='landing--social'
-                                    style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }}
+                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
                                     aria-label='GitHub'
                                 />
                             </a>
@@ -138,7 +88,7 @@ function Landing() {
                             >
                                 <FaTwitter
                                     className='landing--social'
-                                    style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }}
+                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
                                     aria-label='Twitter'
                                 />
                             </a>
@@ -151,7 +101,7 @@ function Landing() {
                             >
                                 <FaYoutube
                                     className='landing--social'
-                                    style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }}
+                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
                                     aria-label='YouTube'
                                 />
                             </a>
@@ -164,7 +114,7 @@ function Landing() {
                             >
                                 <FaBlogger
                                     className='landing--social'
-                                    style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }}
+                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
                                     aria-label='Blogger'
                                 />
                             </a>
@@ -175,10 +125,10 @@ function Landing() {
                         <Col md={12} className="d-flex justify-content-center">
                         <Row>
                                 <Col className='col-auto disable-on-sm'>
-                                <small  style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }}>Reach out to me :</small>
+                                <small  style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}>Reach out to me :</small>
                                 </Col>
                                 <Col className='p-0'>
-                                    <small style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary  }} className="left-section-strong">swati.pal2804@gmail.com</small>
+                                    <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="left-section-strong">swati.pal2804@gmail.com</small>
                                 </Col>
                                 </Row>
                         </Col>
@@ -192,16 +142,16 @@ function Landing() {
                     className='landing--img'
                     style={{
                         opacity: `${drawerOpen ? '0' : '1'}`,
-                        borderColor: theme.tertiary,
+                        borderColor: themes.tertiary,
                     }}
                 />
                 <div
                     className='landing--container-right'
-                    style={{ backgroundColor: theme.secondary }}
+                    style={{ backgroundColor: themes.secondary }}
                 >
                     <div
                         className='lcr--content'
-                        style={{ color: theme.tertiary }}
+                        style={{ color: themes.tertiary }}
                     >
                         <p className='right-section-p'>Hi 👋</p>
                         <h3><span className='right-section-p'>I'm</span> {headerData.name}</h3>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState,useEffect } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
@@ -17,9 +17,22 @@ import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
 function CaseStudyNav() {
     const { theme, setHandleDrawer ,setTheme } = useContext(ThemeContext);
+    const [themes, setThemes] = useState(theme)
 
     const [open, setOpen] = useState(false);
 
+
+    useEffect(() => {
+        const themess =  localStorage.getItem('theme')
+        console.log('inside useEffect', themess);
+        if(themess === 'dark') {
+         setThemes(darkTheme)
+     } else {
+         setThemes(lightTheme)
+     }
+       }, [localStorage.getItem('theme')])
+    
+    
     const handleDrawerOpen = () => {
         setOpen(true);
         setHandleDrawer();
@@ -31,12 +44,14 @@ function CaseStudyNav() {
 
     };
 
+
     const handleTheme = () => {
-        console.log('theme',theme);
         if(theme.type === 'dark') {
+            localStorage.setItem('theme', 'light')
             setTheme(lightTheme)
         } else {
             setTheme(darkTheme)
+            localStorage.setItem('theme', 'dark')
         }
     }
 
@@ -48,23 +63,24 @@ function CaseStudyNav() {
              },
         },
         navMenuOpenItems : {
-            color: theme.tertiary,
+            color: themes.tertiary,
             fontWeight: 'normal',
-            fontSize: '20px',
-            // opacity: '0',
+            fontSize: '16px',
+            opacity: '1',
             margin:'30px',
             '&:hover': {
-                color: theme.primary,
+                color: themes.tertiary,
+                opacity: '0.7',
             },
         },
         navMenu: {
             fontSize: '2.5rem',
-            color: theme.tertiary,
+            color: themes.tertiary,
             cursor: 'pointer',
             transform: 'translateY(-10px)',
             transition: 'color 0.3s',
             '&:hover': {
-                color: theme.primary,
+                color: themes.primary,
             },
             [t.breakpoints.up('lg')]: {
               display:'none'
@@ -83,7 +99,7 @@ function CaseStudyNav() {
             fontStyle: ' normal',
             fontWeight: ' normal',
             fontSize: ' 24px',
-            background: theme.secondary,
+            background: themes.secondary,
             overflow: 'hidden',
             borderTopRightRadius: '40px',
             borderBottomRightRadius: '40px',
@@ -95,13 +111,13 @@ function CaseStudyNav() {
             fontSize: '2rem',
             fontWeight: 'bold',
             cursor: 'pointer',
-            color: theme.primary,
+            color: themes.primary,
             position: 'absolute',
             right: 40,
             top: 40,
             transition: 'color 0.2s',
             '&:hover': {
-                color: theme.tertiary,
+                color: themes.tertiary,
             },
             [t.breakpoints.down('sm')]: {
                 right: 20,
@@ -111,8 +127,8 @@ function CaseStudyNav() {
         drawerItem: {
             margin: '2rem auto',
             borderRadius: '78.8418px',
-            background: theme.secondary,
-            color: theme.primary,
+            background: themes.secondary,
+            color: themes.primary,
             width: '85%',
             height: '60px',
             display: 'flex',
@@ -121,11 +137,11 @@ function CaseStudyNav() {
             padding: '0 30px',
             boxSizing: 'border-box',
             border: '2px solid',
-            borderColor: theme.primary,
+            borderColor: themes.primary,
             transition: 'background-color 0.2s, color 0.2s',
             '&:hover': {
-                background: theme.primary,
-                color: theme.secondary,
+                background: themes.primary,
+                color: themes.secondary,
             },
             [t.breakpoints.down('sm')]: {
                 width: '100%',
@@ -159,15 +175,14 @@ function CaseStudyNav() {
             return name;
         }
     };
+    const themeColor  = themes.type === 'light' ? 'white': themes.primary
 
     return (
-        <div className='navbar-c' >
-            <div className='navbar--container-c'>
-                <h1 style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary   }}>
+        <div className='navbar-c' style={{backgroundColor:themeColor}}>
+            <div className='navbar--container-c' style={{backgroundColor:themeColor}}>
+            <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.tertiary : themes.tertiary   }}>
                     {shortname(headerData.name)}
-                </h1>
-
-
+                </p>
                 <IoMenuSharp
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
@@ -175,11 +190,11 @@ function CaseStudyNav() {
                 />
                 
                 <div className={classes.navMenuOpen}>
-                    <div className={classes.navMenuOpenItems}>Home</div>
+                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>Home</div></a>
                     <div className={classes.navMenuOpenItems}>Work</div>
                     <div className={classes.navMenuOpenItems}>Resume</div>
                     <div className={classes.navMenuOpenItems}>About Me</div>
-                    <img onClick={handleTheme} src={theme.themeLogo} alt="s" />
+                    <img onClick={handleTheme} src={themes.themeLogo} alt="s" />
                 </div>
                 
             </div>

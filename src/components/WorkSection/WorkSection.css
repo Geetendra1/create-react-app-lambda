@@ -27,7 +27,7 @@ line-height: 48px;
 .selected-work-heading {
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
 font-size: 32px;
 /* line-height: 36px; */
 }
@@ -36,15 +36,15 @@ font-size: 32px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 17px;
 /* line-height: 36px; */
 }
 
 .selected-work-description {
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 300;
-font-size: 17px;
+font-weight: 400;
+font-size: 15px;
 /* line-height: 28px; */
 }
 

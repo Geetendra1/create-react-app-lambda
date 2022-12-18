@@ -36,11 +36,7 @@ function useWindowSize() {
   }
 
 const Geepack = () => {
-    const [width] = useWindowSize();
-
-
-console.log('width: ' + width );
-      
+    const [width] = useWindowSize();      
 
     return (
         <>

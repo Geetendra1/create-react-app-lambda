@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
-import { Footer, Navbar} from './components'
+import { Footer} from './components'
 
 import { ThemeContext } from './contexts/ThemeContext';
 import { Main,CaseStudyPage } from './pages'

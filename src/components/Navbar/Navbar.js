@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState,useEffect } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
@@ -17,6 +17,7 @@ import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
 function Navbar() {
     const { theme, setHandleDrawer ,setTheme } = useContext(ThemeContext);
+    const [themes, setThemes] = useState(theme)
 
     const [open, setOpen] = useState(false);
 
@@ -31,8 +32,17 @@ function Navbar() {
 
     };
 
+
+    useEffect(() => {
+        const themess =  localStorage.getItem('theme')
+        if(themess === 'dark') {
+         setThemes(darkTheme)
+     } else {
+         setThemes(lightTheme)
+     }
+       }, [localStorage.getItem('theme')])
+
     const handleTheme = () => {
-        console.log('theme',theme);
         if(theme.type === 'dark') {
             localStorage.setItem('theme', 'light')
             setTheme(lightTheme)
@@ -50,23 +60,24 @@ function Navbar() {
              },
         },
         navMenuOpenItems : {
-            color: theme.tertiary,
+            color: themes.tertiary,
             fontWeight: 'normal',
-            fontSize: '20px',
-            // opacity: '0',
+            fontSize: '16px',
+            opacity: '1',
             margin:'30px',
             '&:hover': {
-                color: theme.primary,
+                color: themes.tertiary,
+                opacity: '0.7',
             },
         },
         navMenu: {
             fontSize: '2.5rem',
-            color: theme.tertiary,
+            color: themes.tertiary,
             cursor: 'pointer',
             transform: 'translateY(-10px)',
             transition: 'color 0.3s',
             '&:hover': {
-                color: theme.primary,
+                color: themes.primary,
             },
             [t.breakpoints.up('lg')]: {
               display:'none'
@@ -85,7 +96,7 @@ function Navbar() {
             fontStyle: ' normal',
             fontWeight: ' normal',
             fontSize: ' 24px',
-            background: theme.secondary,
+            background: themes.secondary,
             overflow: 'hidden',
             borderTopRightRadius: '40px',
             borderBottomRightRadius: '40px',
@@ -97,13 +108,13 @@ function Navbar() {
             fontSize: '2rem',
             fontWeight: 'bold',
             cursor: 'pointer',
-            color: theme.primary,
+            color: themes.primary,
             position: 'absolute',
             right: 40,
             top: 40,
             transition: 'color 0.2s',
             '&:hover': {
-                color: theme.tertiary,
+                color: themes.tertiary,
             },
             [t.breakpoints.down('sm')]: {
                 right: 20,
@@ -113,8 +124,8 @@ function Navbar() {
         drawerItem: {
             margin: '2rem auto',
             borderRadius: '78.8418px',
-            background: theme.secondary,
-            color: theme.primary,
+            background: themes.secondary,
+            color: themes.primary,
             width: '85%',
             height: '60px',
             display: 'flex',
@@ -123,11 +134,11 @@ function Navbar() {
             padding: '0 30px',
             boxSizing: 'border-box',
             border: '2px solid',
-            borderColor: theme.primary,
+            borderColor: themes.primary,
             transition: 'background-color 0.2s, color 0.2s',
             '&:hover': {
-                background: theme.primary,
-                color: theme.secondary,
+                background: themes.primary,
+                color: themes.secondary,
             },
             [t.breakpoints.down('sm')]: {
                 width: '100%',

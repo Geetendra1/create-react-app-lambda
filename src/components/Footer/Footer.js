@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext,useEffect,useState } from 'react'
 import './Footer.css'
 import { ThemeContext } from '../../contexts/ThemeContext'
 import {
@@ -9,7 +9,9 @@ import {
     FaBlogger,
 } from 'react-icons/fa';
 import { socialsData } from '../../data/socialsData';
-
+import { 
+    darkTheme, lightTheme
+  } from '../../theme/theme'
 
 function Footer() {
 
@@ -22,11 +24,20 @@ function Footer() {
     // }
 
     const { theme }  = useContext(ThemeContext)
+    const [themes, setThemes] = useState(theme)
 
-    const textColor  = theme.type === 'light' ? theme.secondary : theme.tertiary
+    const textColor  = themes.type === 'light' ? themes.secondary : themes.tertiary
     
+    useEffect(() => {
+        const themess =  localStorage.getItem('theme')
+        if(themess === 'dark') {
+         setThemes(darkTheme)
+     } else {
+         setThemes(lightTheme)
+     }
+       }, [localStorage.getItem('theme')])
     return (
-        <div className="footer" style={{backgroundColor: theme.primary}}>
+        <div className="footer" style={{backgroundColor: themes.primary}}>
             <p style={{color: textColor}}>
                   💁🏻‍♀️ Get in touch ✨
             </p>
