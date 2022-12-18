@@ -10,21 +10,22 @@ import {
   import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
-import one from '../../assets/svg/about/Rectangle 4560 (2).svg'
+import one from '../../assets/png/Rectangle 4560 (2).png'
 
-import two from '../../assets/svg/about/Rectangle 4559 (2).svg'
+import two from '../../assets/png/Rectangle 4559 (2).png'
 
-import three from '../../assets/svg/about/Rectangle 4559 (1).svg'
+import three from '../../assets/png/Rectangle 4559 (1).png'
 
-import four from '../../assets/svg/about/Rectangle 4560 (1).svg'
+import four from '../../assets/png/Rectangle 4560 (1).png'
 
-import five from '../../assets/svg/about/Rectangle 4561 (1).svg'
+import five from '../../assets/png/Rectangle 4561 (1).png'
 
-import six from '../../assets/svg/about/Rectangle 4561.svg'
-import seven from '../../assets/svg/about/Rectangle 4559.svg'
-import eight from '../../assets/svg/about/Rectangle 4560.svg'
+import six from '../../assets/png/Rectangle 4561.png'
+import seven from '../../assets/png/Rectangle 4559.png'
+import eight from '../../assets/png/Rectangle 4560.png'
 
-import nine from '../../assets/svg/about/Rectangle 4561 (2).svg'
+import nine from '../../assets/png//Rectangle 4561 (2).png'
+// import ten from '../../assets/png/Rectangle 4559.png'
 
 
 const About = () => {
@@ -132,18 +133,20 @@ const About = () => {
                 <Col md={4} className='p-2'>
                     <img
                     style={{width:"100%", height:"100%"}}
-                    src={two}
+                    src={three}
                     alt=''
                 />
+                
                     </Col>
                     <Col md={4} className='p-2'>
                     <img
                     style={{width:"100%", height:"100%"}}
-                    src={one}
+                    src={four}
                     alt=''
                 />
                     </Col>
-
+  
+                   
                     <Col md={4} className='p-2'>
                     <img
                     style={{width:"100%", height:"100%"}}
@@ -151,6 +154,8 @@ const About = () => {
                     alt=''
                 />
                     </Col>
+
+
                 </Row>
                 
                 
@@ -159,7 +164,7 @@ const About = () => {
                 <Col md={4} className='p-2'>
                     <img
                     style={{width:"100%", height:"100%"}}
-                    src={three}
+                    src={two}
                     alt=''
                 />
                     </Col>
@@ -173,11 +178,13 @@ const About = () => {
                     <Col md={4} className='p-2'>
                     <img
                     style={{width:"100%", height:"100%"}}
-                    src={four}
+                    src={one}
                     alt=''
                 />
                     </Col>
-                   
+
+
+                
                 </Row>
                 </div>
                 </Col>
