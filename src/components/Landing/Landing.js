@@ -52,7 +52,7 @@ function Landing() {
                         <Col md={12} className="d-flex justify-content-center">
                             <Row>
                                 <Col className='col-auto disable-on-sm '>
-                                <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} >find me on :</small>
+                                <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2">Find me on :</small>
                                 </Col>
                                 <Col className='p-0'>
                             {socialsData.linkedIn && (
@@ -126,10 +126,10 @@ function Landing() {
                         <Col md={12} className="d-flex justify-content-center">
                         <Row>
                                 <Col className='col-auto disable-on-sm'>
-                                <small  style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}>Reach out to me :</small>
+                                <small  style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2">Reach out to me :</small>
                                 </Col>
-                                <Col className='p-0'>
-                                    <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="left-section-strong">swati.pal2804@gmail.com</small>
+                                <Col className='p-0 disable-on-sm'>
+                                    <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para1">swati.pal2804@gmail.com</small>
                                 </Col>
                                 </Row>
                         </Col>
@@ -154,12 +154,12 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: themes.tertiary }}
                     >
-                        <p className='right-section-p'>Hi 👋</p>
-                        <h3><span className='right-section-p'>I'm</span> {headerData.name}</h3>
+                        <p className='heading2'>Hi 👋</p>
+                        <h3><span className='heading2'>I'm</span> {headerData.name}</h3>
                         {/* <span style={{display:'flex'}}><span className=''></span><h3>{headerData.name}</h3></span> */}
-                        <p className='right-section-p'>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
-                        <p className='right-section-p'>Currently pursuing MS in Human-Computer Interaction @<strong> Indiana University - Purdue University Indianapolis, United States.</strong> </p>
-                        <p className='right-section-p'>I previously have designed products at Cliff.ai (GTM Hub) & Nickelfox Technologies.</p>
+                        <p className='heading2'>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
+                        <p className='heading2'>Currently pursuing MS in Human-Computer Interaction @<strong> Indiana University - Purdue University Indianapolis, United States.</strong> </p>
+                        <p className='heading2'>I previously have designed products at Cliff.ai (GTM Hub) & Nickelfox Technologies.</p>
                         {/* <p>{headerData.desciption}</p> */}
 
                         {/* <div className='lcr-buttonContainer'>

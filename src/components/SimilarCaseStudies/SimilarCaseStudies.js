@@ -44,7 +44,7 @@ function SimilarCaseStudies(props) {
         <>
                  <div id="projects" style={{backgroundColor: themes.secondary}}>
                      <div className="work--header">
-                         <h1 className='work-container-selected-work-header' style={{color: themes.tertiary}} >More Case Studies</h1>
+                         <h1 className='heading1' style={{color: themes.tertiary}} >More Case Studies</h1>
                     </div>
                     <Row className='m-0 p-5 pt-3' >
                            {data.slice(0, 3).map(work => (

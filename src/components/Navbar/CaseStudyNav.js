@@ -180,8 +180,8 @@ function CaseStudyNav() {
 
     return (
         <div className='navbar-c' style={{backgroundColor:themeColor}}>
-            <div className='navbar--container-c' style={{backgroundColor:themeColor}}>
-            <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.tertiary : themes.tertiary   }}>
+            <div className='navbar--container-c m-5' style={{backgroundColor:themeColor}}>
+              <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.tertiary : themes.tertiary   }}>
                     {shortname(headerData.name)}
                 </p>
                 <IoMenuSharp
@@ -190,11 +190,12 @@ function CaseStudyNav() {
                     aria-label='Menu'
                 />
                 
-                <div className={classes.navMenuOpen}>
+                <div className={`${classes.navMenuOpen}`}>
                 <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>Home</div></a>
                     <div className={classes.navMenuOpenItems}>Work</div>
                     <div className={classes.navMenuOpenItems}>Resume</div>
-                    <div className={classes.navMenuOpenItems}>About Me</div>
+                    <a href='/about' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>About Me</div></a>
+
                     <img onClick={handleTheme} src={themes.themeLogo} alt="s" />
                 </div>
                 

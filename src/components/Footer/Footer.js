@@ -39,10 +39,10 @@ function Footer() {
        }, [themeChange])
     return (
         <div className="footer" style={{backgroundColor: themes.primary}}>
-            <p style={{color: textColor}}>
+            <p style={{color: textColor}} className="heading2">
                   💁🏻‍♀️ Get in touch ✨
             </p>
-            <div> <small style={{color: textColor}} className="footer-small-text">Follow me on : </small>
+            <div> <small style={{color: textColor}} className="para2">Find me on : </small>
                         {socialsData.linkedIn && (
                             <a
                                 href={socialsData.linkedIn}
@@ -110,8 +110,8 @@ function Footer() {
                             </a>
                         )}
             </div>
-            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="footer-small-text">Reach out to me : </small> <p style={{marginLeft:'10px'}} className="section-p" >swati.pal2804@gmail.com</p></div>
-            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="footer-small-text">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="section-p">Book a session with me on <u>ADPList</u></p></div>
+            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="para2">Reach out to me : </small> <p style={{marginLeft:'10px'}} className="para1" >swati.pal2804@gmail.com</p></div>
+            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="para2">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="para1">Book a session with me on <u>ADPList</u></p></div>
 
         </div>
     )

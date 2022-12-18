@@ -12,7 +12,7 @@ function SelectedWorkCard({ theme, key,id, slug,projectName, projectDesc, projec
                     <img src={image} alt={projectName} style={{width:"100%", height:"100%"}}/>
                 </div>
                 <div className="singleBlog--body">
-                    <h3 className='mt-3 selected-work-heading' style={{color: theme.tertiary}}>{projectName}</h3>
+                    <h3 className='mt-3 heading3' style={{color: theme.tertiary}}>{projectName}</h3>
                     <p style={{color: theme.tertiary}} className="para1">{projectDesc}</p>
                     <p style={{color: theme.tertiary}} className="para2">{projectShortDesc}</p>  
                 </div>

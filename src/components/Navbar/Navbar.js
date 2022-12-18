@@ -176,7 +176,7 @@ function Navbar() {
 
     return (
         <div className='navbar-s' >
-            <div className='navbar--container'>
+            <div className='navbar--container m-5'>
                 <p className='navbar--container-p ' style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary   }}>
                     {shortname(headerData.name)}
                 </p>

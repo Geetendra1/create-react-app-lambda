@@ -32,7 +32,7 @@ font-size: 17px;
 .landing--img {
   --img-size: 400px;
   position: absolute;
-  left: 35%;
+  left: 33%;
   transform: translateX(-50%);
   width: var(--img-size);
   height: var(--img-size);
@@ -43,7 +43,7 @@ font-size: 17px;
 }
 
 .landing--container-left {
-  flex: 35%;
+  flex: 33%;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -70,7 +70,7 @@ font-size: 17px;
 
 
 .landing--container-right {
-  flex: 65%;
+  flex: 67%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ font-size: 17px;
 
 .lcr--content {
   width: 65%;
-  margin-right: 3rem;
+  margin-right: 5rem;
   font-family: var(--primaryFont);
   font-style: normal;
 }
@@ -99,12 +99,12 @@ font-size: 17px;
   margin: 1rem 0;
 }
 
-.lcr--content p {
+/* .lcr--content p {
   margin-top: 1.45rem;
   font-weight: 500;
   font-size: 1.15rem;
   opacity: 0.7;
-}
+} */
 
 .lcr-buttonContainer {
   margin-top: 2rem;

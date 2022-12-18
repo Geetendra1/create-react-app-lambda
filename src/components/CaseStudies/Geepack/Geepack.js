@@ -100,46 +100,46 @@ const Geepack = () => {
 				<Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
 					<Row className="" >
 							<Col md={12}>
-								<h3>Why did I pick up this project?</h3>
+								<h3 className='heading4'>Why did I pick up this project?</h3>
 							</Col>
 							<Col  md={12}>
-							<p>During this COVID-19 pandemic, as soon as the flight started operating, I decided to go back to my home. When I was dropping my bag on the counter for check-in, the luggage tag was not fastened properly, which got me concerned for my luggage. It’s a headache if you lose your property at the airport!</p>
-                            <p>After landing, it took more time than usual to bring the bags to the belt. I kept waiting. Minutes later, a few bags were on the belt. As soon as people saw it coming, they rushed to the belt, forgetting about social distancing.</p>
-                            <p>After watching all this, I thought it would be a nice idea to design an application that could track the luggage to prevent all the hassle!</p>
+							<p className="para2"> During this COVID-19 pandemic, as soon as the flight started operating, I decided to go back to my home. When I was dropping my bag on the counter for check-in, the luggage tag was not fastened properly, which got me concerned for my luggage. It’s a headache if you lose your property at the airport!</p>
+                            <p className="para2"> After landing, it took more time than usual to bring the bags to the belt. I kept waiting. Minutes later, a few bags were on the belt. As soon as people saw it coming, they rushed to the belt, forgetting about social distancing.</p>
+                            <p className="para2"> After watching all this, I thought it would be a nice idea to design an application that could track the luggage to prevent all the hassle!</p>
 							</Col>
 					</Row>
 
 
                     <Row className="mt-5">
 							<Col md={12}>
-								<h3>What is GEPACK?</h3>
+								<h3 className='heading4'>What is GEPACK?</h3>
 							</Col>
 							<Col  md={12}>
-							<p>GEPACK is a baggage tracking app that helps its users track their baggage from the very beginning of their journey until they receive it from the belt. It helps the users stay relaxed and relieved while traveling as they can track their baggage and check the status anytime, along with many other features.</p>
+							<p className="para2"> GEPACK is a baggage tracking app that helps its users track their baggage from the very beginning of their journey until they receive it from the belt. It helps the users stay relaxed and relieved while traveling as they can track their baggage and check the status anytime, along with many other features.</p>
 							</Col>
 					</Row>
 
                     <Row className="mt-5">
 							<Col md={12}>
-								<h3>User’s Pain-Points</h3>
+								<h3 className='heading4'>User’s Pain-Points</h3>
 							</Col>
 							<Col  md={12}>
-							<p>GEPACK is a baggage tracking app that helps its users track their baggage from the very beginning of their journey until they receive it from the belt. It helps the users stay relaxed and relieved while traveling as they can track their baggage and check the status anytime, along with many other features.</p>
+							<p className="para2"> GEPACK is a baggage tracking app that helps its users track their baggage from the very beginning of their journey until they receive it from the belt. It helps the users stay relaxed and relieved while traveling as they can track their baggage and check the status anytime, along with many other features.</p>
 							</Col>
                             <Col md={12} className="mt-2">
 							<Image src={two} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
                             <Col  md={12} className="mt-5">
-							<p>In 2020, 3.5 mishandled baggage reports were filed per 1000 passengers worldwide. In 2020, the total cost of bag mishandling to the aviation industry stood at around 600 million U.S. dollars, down from 2.5 billion U.S. dollars in the previous year.</p>
+							<p className="para2"> In 2020, 3.5 mishandled baggage reports were filed per 1000 passengers worldwide. In 2020, the total cost of bag mishandling to the aviation industry stood at around 600 million U.S. dollars, down from 2.5 billion U.S. dollars in the previous year.</p>
 							</Col>
 					</Row>
 
                     <Row className="mt-5">
 							<Col md={12}>
-								<h3>Key Insights</h3>
+								<h3 className='heading4'>Key Insights</h3>
 							</Col>
 							<Col  md={12}>
-							<p>While traveling, people deal with different problems and challenges at the airport. I did research and found some of the problems exist in real and have written down in the form of user cases:</p>
+							<p className="para2"> While traveling, people deal with different problems and challenges at the airport. I did research and found some of the problems exist in real and have written down in the form of user cases:</p>
 							</Col>
                             <Col md={12} className="mt-2">
 							<Image src={three} alt={'Employee Management'} style={{width:"80%", height:"80%"}} fluid />
@@ -148,10 +148,10 @@ const Geepack = () => {
 
                     <Row className="mt-5">
 							<Col md={12}>
-								<h3>Proposed Solutions</h3>
+								<h3 className='heading4'>Proposed Solutions</h3>
 							</Col>
 							<Col  md={12}>
-							<p>To validate the pain points and user cases, I interviewed few of my friends and relatives asking them about their travel experiences and to know about their pain points. Based on this I concluded that these problems do exist and proposed following solutions:</p>
+							<p className="para2"> To validate the pain points and user cases, I interviewed few of my friends and relatives asking them about their travel experiences and to know about their pain points. Based on this I concluded that these problems do exist and proposed following solutions:</p>
 							</Col>
                             <Col md={12} className="mt-2">
 							<Image src={four} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
@@ -163,10 +163,10 @@ const Geepack = () => {
                             <Col md={7} style={{display:'flex',justifyContent: 'start', alignItems:'center'}}>
                                 <Row >
                                     <Col md={12}>
-                                        <h3>Target Users</h3>
+                                        <h3 className='heading4'>Target Users</h3>
                                     </Col>
                                     <Col  md={12}>
-                                        <p>Travelers of any age, traveling with family or alone, anyone can use the app to track and find his/her luggage at the airport.</p>
+                                        <p className="para2"> Travelers of any age, traveling with family or alone, anyone can use the app to track and find his/her luggage at the airport.</p>
                                     </Col>
                                 </Row>
                             </Col>
@@ -177,10 +177,10 @@ const Geepack = () => {
 
                     <Row className="mt-5">
 							<Col md={12}>
-								<h3>User Flow</h3>
+								<h3 className='heading4'>User Flow</h3>
 							</Col>
 							<Col  md={12}>
-						    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						    	<p className="para2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 							</Col>
                             <Col md={12} className="mt-2 d-flex justify-content-center" >
 							<Image src={six} alt={'Employee Management'} style={{width:"70%", height:"100%"}} fluid />
@@ -190,10 +190,10 @@ const Geepack = () => {
 
                     <Row className="mt-5">
 							<Col md={12}>
-								<h3>Typography & Colors</h3>
+								<h3 className='heading4'>Typography & Colors</h3>
 							</Col>
 							<Col  md={12}>
-						    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						    	<p className="para2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 							</Col>
                             <Col md={12} className="mt-2" >
 							<Image src={seven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
@@ -206,10 +206,10 @@ const Geepack = () => {
 
                     <Row className="mt-5">
 							<Col md={12}>
-								<h3>Visuals</h3>
+								<h3 className='heading4'>Visuals</h3>
 							</Col>
 							<Col  md={12}>
-						    	<p>After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
+						    	<p className="para2"> After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
 							</Col>
                             <Col md={12} className="mt-2 d-flex justify-content-center" >
 							<Image src={nine} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
@@ -221,10 +221,10 @@ const Geepack = () => {
                     <Col className='d-flex justify-content-center' md={12} >
                     <Row className={`mt-5 text-center ${width > 1000 ? "w-25" : "w-75"}`}>
 							<Col md={12}>
-								<h3>Tab Bar</h3>
-                                <p>After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
+								<h3 className='heading4'>Tab Bar</h3>
+                                <p className="para2"> After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
                                 <p className='m-0'>1. Scan QR Code</p>
-								<p>2. Add a new trip</p>
+								<p className="para2"> 2. Add a new trip</p>
 							</Col>
 					</Row>
                     </Col>

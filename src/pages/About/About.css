@@ -1,0 +1,57 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    position: relative;
+}
+
+.hero-left{
+    flex: 65%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.hero--img {
+    --img-size: 560px;
+    position: absolute;
+    top: 18%;
+    left: 24%;   
+    transform: translateX(-50%);
+    width: var(--ismg-size);
+    height: var(--img-size);
+    object-fit: cover;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
+    transition: opacity 0.3s;
+    /* background-color: red; */
+
+}
+
+.hero-right {
+    /* background-color: blue; */
+    /* margin: 0px;
+    padding: 0px; */
+    flex: 70%;
+    height: 100%;
+    /* width: ; */
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.about-description{
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.about-interestes {
+    /* margin-top: 12%; */
+
+}
