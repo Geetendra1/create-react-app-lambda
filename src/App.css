@@ -1,13 +1,13 @@
 :root {
-    font-family: 'Montserrat';
+    font-family: 'Mulish';
     /* --primaryFont: 'Poppins', sans-serif; */
-    --primaryFont: 'Montserrat';
+    --primaryFont: 'Mulish';
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
 
 .small-text {
-    font-family: 'Montserrat';
+    font-family: 'Mulish';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -42,7 +42,7 @@ line-height: 80px;
 
 /* hero section text */
 .heading2 {
-    font-family: 'Montserrat';
+    font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -63,7 +63,7 @@ font-size: 24px;
 }
 /*  */
 .para1 {
-    font-family: 'Montserrat';
+    font-family: 'Mulish';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -72,7 +72,7 @@ font-size: 24px;
 
   /*  */
   .para2 {
-    font-family: 'Montserrat';
+    font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -80,7 +80,7 @@ font-size: 24px;
     /* text-transform: capitalize; */
   }
   .para3 {
-    font-family: 'Montserrat';
+    font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
