@@ -9,16 +9,19 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import { withRouter } from 'react-router-dom';
+
 import { 
     darkTheme, lightTheme
 } from '../../theme/theme'
 import './CaseStudyNav.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
-function CaseStudyNav() {
+function CaseStudyNav({history}) {
     const { theme, setHandleDrawer ,setTheme } = useContext(ThemeContext);
     const [themes, setThemes] = useState(theme)
-
+    const lastSegment = history.location.pathname.split("/").pop()
+    console.log('lastSegment',lastSegment);
     const [open, setOpen] = useState(false);
     const themeChange = localStorage.getItem('theme')
 
@@ -176,11 +179,10 @@ function CaseStudyNav() {
             return name;
         }
     };
-    const themeColor  = themes.type === 'light' ? 'white': themes.primary
 
     return (
-        <div className='navbar-c' style={{backgroundColor:themeColor}}>
-            <div className='navbar--container-c m-5' style={{backgroundColor:themeColor}}>
+        <div className='navbar-c' style={{backgroundColor:themes.secondary}}>
+            <div className='navbar--container-c m-5' style={{backgroundColor:themes.secondary}}>
               <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.tertiary : themes.tertiary   }}>
                     {shortname(headerData.name)}
                 </p>
@@ -191,10 +193,10 @@ function CaseStudyNav() {
                 />
                 
                 <div className={`${classes.navMenuOpen}`}>
-                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>Home</div></a>
-                    <div className={classes.navMenuOpenItems}>Work</div>
-                    <div className={classes.navMenuOpenItems}>Resume</div>
-                    <a href='/about' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>About Me</div></a>
+                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === '' ? '1' : '0.5'}}>Home</div></a>
+                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'work' ? '1' : '0.5'}}>Work</div>
+                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'resume' ? '1' : '0.5'}}>Resume</div>
+                    <a href='/about' style={{textDecoration:'none'}} > <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.5'}}>About Me</div></a>
 
                     <img onClick={handleTheme} src={themes.themeLogo} alt="s" />
                 </div>
@@ -344,4 +346,4 @@ function CaseStudyNav() {
     );
 }
 
-export default CaseStudyNav;
+export default withRouter(CaseStudyNav);

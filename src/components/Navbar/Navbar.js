@@ -1,6 +1,8 @@
 import React, { useContext, useState,useEffect } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade';
+import { withRouter } from 'react-router-dom';
+
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
@@ -15,11 +17,12 @@ import {
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
-function Navbar() {
+function Navbar({history}) {
     const { theme, setHandleDrawer ,setTheme } = useContext(ThemeContext);
     const [themes, setThemes] = useState(theme)
     const themeChange = localStorage.getItem('theme')
-
+    const lastSegment = history.location.pathname.split("/").pop()
+    console.log('lastSegment',lastSegment);
     const [open, setOpen] = useState(false);
 
     const handleDrawerOpen = () => {
@@ -177,7 +180,7 @@ function Navbar() {
     return (
         <div className='navbar-s' >
             <div className='navbar--container m-5'>
-                <p className='navbar--container-p ' style={{ color: theme.type === 'light' ? theme.secondary : theme.tertiary   }}>
+                <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary   }}>
                     {shortname(headerData.name)}
                 </p>
 
@@ -189,10 +192,11 @@ function Navbar() {
                 />
                 
                 <div className={classes.navMenuOpen}>
-                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>Home</div></a>
-                    <div className={classes.navMenuOpenItems}>Work</div>
-                    <div className={classes.navMenuOpenItems}>Resume</div>
-                    <a href='/about' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>About Me</div></a>
+                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === '' ? '1' : '0.4'}}>Home</div></a>
+                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'work' ? '1' : '0.4'}}>Work</div>
+                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'resume' ? '1' : '0.4'}}>Resume</div>
+                    <a href='/about' style={{textDecoration:'none'}} > <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.4'}}>About Me</div></a>
+
                     <img onClick={handleTheme} src={themes.themeLogo} alt="s" />
                 </div>
                 
@@ -341,4 +345,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default withRouter(Navbar);
