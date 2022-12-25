@@ -193,7 +193,7 @@ function Navbar() {
                     <div className={classes.navMenuOpenItems}>Work</div>
                     <div className={classes.navMenuOpenItems}>Resume</div>
                     <a href='/about' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>About Me</div></a>
-                    <img onClick={handleTheme} src={theme.themeLogo} alt="s" />
+                    <img onClick={handleTheme} src={themes.themeLogo} alt="s" />
                 </div>
                 
             </div>
