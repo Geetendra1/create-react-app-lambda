@@ -47,9 +47,9 @@
 								<Col lg={3} md={6} sm={12}className="text-lg-start text-md-start text-center" >
 									<Row className=''>
 											<Col md={12}>
-												<h4 style={{color: textColor}}>Goal</h4>
+												<h3 className="heading4" style={{color: textColor}}>Goal</h3>
 											</Col>
-											<Col md={12} className="text-start">
+											<Col md={12} className="text-star para2">
 												<small style={{color: textColor}}>To improve the user experience by redefining and analyzing the loopholes of the product. For this, I collaborated with Engineering and deveopment teams.</small>
 											</Col>
 									</Row>
@@ -57,10 +57,10 @@
 								<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4 style={{color: textColor}}>Duration</h4>
+											<h3 className="heading4" style={{color: textColor}}>Duration</h3>
 										</Col>
 										<Col md={12} className="text-start">
-										<ul>
+										<ul className="para2">
 											<li style={{color: textColor}}><small>1st version: 8 weeks</small></li>
 											<li style={{color: textColor}}><small>2nd version: 2 weeks</small></li>
 										</ul> 
@@ -70,10 +70,10 @@
 							<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4 style={{color: textColor}}>Role</h4>
+											<h3 className="heading4" style={{color: textColor}}>Role</h3>
 										</Col>
 										<Col md={12} className="text-start">
-										<ul>
+										<ul className="para2">
 											<li style={{color: textColor}}><small>Research & UX Design: Competitive analysis, user flow, information architecture, wireframing</small></li>
 											<li style={{color: textColor}}><small>UI Design: Visuals</small></li>
 										</ul> 
@@ -83,9 +83,9 @@
 							<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4 style={{color: textColor}}>Skills</h4>
+											<h3 className="heading4" style={{color: textColor}}>Skills</h3>
 										</Col>
-										<Col md={12} className="text-start">
+										<Col md={12} className="text-start para2" >
 											<small style={{color: textColor}}>Competitive analysis, user flow, information architecture, wireframing, user testing, interaction design, user interface</small>
 										</Col>
 								</Row>

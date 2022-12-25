@@ -41,14 +41,14 @@ const ModernDataStack = () => {
             <Image src={one} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
         </div>
             {/* overview section */}
-				<Container className='w-100 mt-5'>
+				<div className='mx-auto mt-5' style={{ width:"87%"}}>
 					<Row className="mds-first-container" >
 								<Col lg={3} md={6} sm={12}className="text-lg-start text-md-start text-center" >
 									<Row className=''>
 											<Col md={12}>
-												<h4>Goal</h4>
+												<h3 className="heading4">Goal</h3>
 											</Col>
-											<Col md={12} className="text-start">
+											<Col md={12} className="text-start para2">
 												<small>To improve the user experience by redefining and analyzing the loopholes of the product. For this, I collaborated with Engineering and deveopment teams.</small>
 											</Col>
 									</Row>
@@ -56,10 +56,10 @@ const ModernDataStack = () => {
 								<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4>Duration</h4>
+											<h3 className="heading4">Duration</h3>
 										</Col>
 										<Col md={12} className="text-start">
-										<ul>
+										<ul className='para2'>
 											<li><small>1st version: 8 weeks</small></li>
 											<li><small>2nd version: 2 weeks</small></li>
 										</ul> 
@@ -69,10 +69,10 @@ const ModernDataStack = () => {
 							<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4>Role</h4>
+											<h3 className="heading4">Role</h3>
 										</Col>
 										<Col md={12} className="text-start">
-										<ul>
+										<ul className='para2'>
 											<li><small>Research & UX Design: Competitive analysis, user flow, information architecture, wireframing</small></li>
 											<li><small>UI Design: Visuals</small></li>
 										</ul> 
@@ -82,16 +82,16 @@ const ModernDataStack = () => {
 							<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4>Skills</h4>
+											<h3 className="heading4">Skills</h3>
 										</Col>
-										<Col md={12} className="text-start">
+										<Col md={12} className="text-start para2">
 											<small>Competitive analysis, user flow, information architecture, wireframing, user testing, interaction design, user interface</small>
 										</Col>
 								</Row>
 							</Col>
 					</Row>
-				</Container>
-                <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+				</div>
+                <Container className='mt-5' style={{ width:"70%"}}>
 					<Row>
 							<Col md={6}>
                                 <Row>
@@ -110,7 +110,7 @@ const ModernDataStack = () => {
 					</Row>
                 </Container>
 
-                <Container className={`mt-5 ${width > 1000 ? "w-75" : "w-75"}`}>
+                <Container className='mt-5' style={{ width:"70%"}}>
 					<Row>
 							<Col md={6} className='p-5'>
                                 <Row>
@@ -139,7 +139,7 @@ const ModernDataStack = () => {
 
 
                 </Container>
-                <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+                <Container className='mt-5' style={{ width:"70%"}}>
 					<Row >
 							<Col md={12} className='mt-5'>
                                 <Row>
@@ -215,7 +215,7 @@ const ModernDataStack = () => {
                         </Col>
                     </Row>
 				</div>
-                <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+                <Container className='mt-5' style={{ width:"70%"}}>
 					<Row >
 							<Col md={12} className='mt-5'>
                                 <Row>
@@ -230,7 +230,7 @@ const ModernDataStack = () => {
 							</Col>
 					</Row>
                 </Container>
-                <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+                <Container className='mt-5' style={{ width:"70%"}}>
 					<Row >
 							<Col md={12} className='mt-5'>
                                 <Row>

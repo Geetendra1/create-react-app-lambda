@@ -50,9 +50,9 @@ const Geepack = () => {
 								<Col lg={3} md={6} sm={12}className="text-lg-start text-md-start text-center" >
 									<Row className=''>
 											<Col md={12}>
-												<h4>Goal</h4>
+												<h3 className="heading4">Goal</h3>
 											</Col>
-											<Col md={12} className="text-start">
+											<Col md={12} className="text-start para2">
 												<small>To improve the user experience by redefining and analyzing the loopholes of the product. For this, I collaborated with Engineering and deveopment teams.</small>
 											</Col>
 									</Row>
@@ -60,10 +60,10 @@ const Geepack = () => {
 								<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4>Duration</h4>
+											<h3 className="heading4">Duration</h3>
 										</Col>
 										<Col md={12} className="text-start">
-										<ul>
+										<ul className='para2'>
 											<li><small>1st version: 8 weeks</small></li>
 											<li><small>2nd version: 2 weeks</small></li>
 										</ul> 
@@ -73,10 +73,10 @@ const Geepack = () => {
 							<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4>Role</h4>
+											<h3 className="heading4">Role</h3>
 										</Col>
 										<Col md={12} className="text-start">
-										<ul>
+										<ul className='para2'>
 											<li><small>Research & UX Design: Competitive analysis, user flow, information architecture, wireframing</small></li>
 											<li><small>UI Design: Visuals</small></li>
 										</ul> 
@@ -86,9 +86,9 @@ const Geepack = () => {
 							<Col lg={3} md={6} sm={12} className="text-lg-start text-md-start text-center">
 								<Row className=''>
 										<Col md={12}>
-											<h4>Skills</h4>
+											<h3 className="heading4">Skills</h3>
 										</Col>
-										<Col md={12} className="text-start">
+										<Col md={12} className="text-start para2">
 											<small>Competitive analysis, user flow, information architecture, wireframing, user testing, interaction design, user interface</small>
 										</Col>
 								</Row>
@@ -97,7 +97,7 @@ const Geepack = () => {
 				</div>
 
                 {/* rest of the case study */}
-				<Container className="mt-5 w-75">
+				<Container className="mt-5" style={{width:"70%"}}>
 					<Row className="" >
 							<Col md={12}>
 								<h3 className='heading4'>Why did I pick up this project?</h3>
@@ -229,26 +229,26 @@ const Geepack = () => {
 					</Row>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                    <Row className="mt-5 w-75"  >
+                    <Row className="mt-5" style={{width:"70%"}}  >
                     <Image src={ten} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                     </Row>
                     </Col>
                  </Row>
 
-                 <Container className="mt-5 w-75">
+                 <Container className="mt-5" style={{width:"70%"}}>
                  <Image src={eleven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 
                  <Row className='g-second-container pb-5 mt-5' style={{width:"100%"}}>
                     <Col className='d-flex justify-content-center'>
-                    <Row className="mt-5 w-75">
+                    <Row className="mt-5" style={{width:"70%"}}>
                     <Image src={twelve} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                     </Row>
                     </Col>
                  </Row>
 
 
-                 <Container className="mt-5 w-75">
+                 <Container className="mt-5" style={{width:"70%"}}>
                  <Image src={thirteen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 
