@@ -39,9 +39,9 @@ function WorkSection() {
      }, [themechange])
     return (
         <>
-                 <div id="projects" style={{backgroundColor: themes.secondary}}>
+                 <div id="projects" className='pt-5' style={{backgroundColor: themes.secondary}}>
                      <div className="work--header">
-                         <h1 className='heading1' style={{color: theme.tertiary}} >Selected Work</h1>
+                         <h1 className='heading1' style={{color: themes.tertiary}} >Selected Work</h1>
                     </div>
                     <Row className='m-0 p-5 pt-3' >
                            {selectedWork.slice(0, 2).map(work => (
@@ -60,7 +60,7 @@ function WorkSection() {
                    </Row>
                    </div>
                    {/* side projects */}
-                   <div id="projects m-0" style={{backgroundColor: themes.secondary}}>
+                   <div id="projects" className='pt-5 pb-5' style={{backgroundColor: themes.secondary}}>
                      <div className="side-work--header">
                          <h1 className='heading1' style={{color: themes.tertiary}} >Concept Based Work</h1>
                     </div>

@@ -42,7 +42,7 @@
 				</div>
 			
 			{/* overview section */}
-				<Container className='w-100' >
+				<div className='mx-auto' style={{ width:"87%"}}>
 					<Row className="em-first-container" >
 								<Col lg={3} md={6} sm={12}className="text-lg-start text-md-start text-center" >
 									<Row className=''>
@@ -91,10 +91,10 @@
 								</Row>
 							</Col>
 					</Row>
-				</Container>
+				</div>
 
 				{/* rest of the case study */}
-				<Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+				<Container className={`mt-5 ${width > 1000 ? "w-75" : "w-75"}`}>
 					<Row className="">
 							<Col md={12}>
 								<h3 className="heading4" style={{color: textColor}} >Cliff.ai overview</h3>

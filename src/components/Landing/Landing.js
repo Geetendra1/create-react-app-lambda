@@ -49,10 +49,10 @@ function Landing() {
                     
                     <div className='lcl--content'>
                     <Row className='w-100'>
-                        <Col md={12} className="d-flex justify-content-center">
+                        <Col md={12} className="w-100 d-flex justify-content-center">
                             <Row>
                                 <Col className='col-auto disable-on-sm '>
-                                <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2">Find me on :</small>
+                                <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2 adjust-para2-font-size">Find me on :</small>
                                 </Col>
                                 <Col className='p-0'>
                             {socialsData.linkedIn && (
@@ -126,10 +126,10 @@ function Landing() {
                         <Col md={12} className="d-flex justify-content-center">
                         <Row>
                                 <Col className='col-auto disable-on-sm'>
-                                <small  style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2">Reach out to me :</small>
+                                <small  style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2 adjust-para2-font-size">Reach out to me :</small>
                                 </Col>
                                 <Col className='p-0 disable-on-sm'>
-                                    <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para1">swati.pal2804@gmail.com</small>
+                                    <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para1 adjust-para2-font-size">swati.pal2804@gmail.com</small>
                                 </Col>
                                 </Row>
                         </Col>
@@ -155,7 +155,7 @@ function Landing() {
                         style={{ color: themes.tertiary }}
                     >
                         <p className='heading2'>Hi 👋</p>
-                        <h3><span className='heading2'>I'm</span> {headerData.name}</h3>
+                        <h3 style={{fontSize:'40px'}}><span className='heading2'>I'm</span> {headerData.name}</h3>
                         {/* <span style={{display:'flex'}}><span className=''></span><h3>{headerData.name}</h3></span> */}
                         <p className='heading2'>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
                         <p className='heading2'>Currently pursuing MS in Human-Computer Interaction @<strong> Indiana University - Purdue University Indianapolis, United States.</strong> </p>

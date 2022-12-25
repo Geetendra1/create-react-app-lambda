@@ -60,8 +60,9 @@ const About = () => {
                     <h1 className='heading0'>The only way to do great work is to do what you love & love what you do.</h1>
                 </div>
         </div>
-        <div className='about-description' style={{width:"100%", height:"100%", backgroundColor:themes.secondary}}  >
-          <Container className='mb-5 mt-5'>
+        <div className='about-description mb-5' style={{width:"100%", height:"100%", backgroundColor:themes.secondary}}  >
+            <Container>
+
             <Row className='d-flex justify-content-center'>
                 <Col md={9} className='d-flex justify-content-start'>
                     <div style={{color:themes.tertiary}}>
@@ -75,9 +76,9 @@ const About = () => {
                     </div>
                 </Col>
             </Row>
-          </Container>
+            </Container>
         </div>
-        <div className='about-interestes' style={{width:"100%", height:"100%", backgroundColor:themes.primary}}  >
+        <div className='about-interestes pb-5' style={{width:"100%", height:"100%", backgroundColor:themes.primary}}  >
           <Container>
             <Row className='d-flex justify-content-center'>
                 <Col md={9} className='d-flex justify-content-start mb-5'>

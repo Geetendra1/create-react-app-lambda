@@ -45,7 +45,7 @@ const Geepack = () => {
         </div>
 
     {/* overview section */}
-				<Container className='w-100 mt-5'>
+				<div className='mt-5 mx-auto' style={{ width:"87%"}}>
 					<Row className="g-first-container" >
 								<Col lg={3} md={6} sm={12}className="text-lg-start text-md-start text-center" >
 									<Row className=''>
@@ -94,10 +94,10 @@ const Geepack = () => {
 								</Row>
 							</Col>
 					</Row>
-				</Container>
+				</div>
 
                 {/* rest of the case study */}
-				<Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+				<Container className="mt-5 w-75">
 					<Row className="" >
 							<Col md={12}>
 								<h3 className='heading4'>Why did I pick up this project?</h3>
@@ -229,26 +229,26 @@ const Geepack = () => {
 					</Row>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                    <Row className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}  >
+                    <Row className="mt-5 w-75"  >
                     <Image src={ten} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                     </Row>
                     </Col>
                  </Row>
 
-                 <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+                 <Container className="mt-5 w-75">
                  <Image src={eleven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 
                  <Row className='g-second-container pb-5 mt-5' style={{width:"100%"}}>
                     <Col className='d-flex justify-content-center'>
-                    <Row className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+                    <Row className="mt-5 w-75">
                     <Image src={twelve} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                     </Row>
                     </Col>
                  </Row>
 
 
-                 <Container className={`mt-5 ${width > 1000 ? "w-50" : "w-75"}`}>
+                 <Container className="mt-5 w-75">
                  <Image src={thirteen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 

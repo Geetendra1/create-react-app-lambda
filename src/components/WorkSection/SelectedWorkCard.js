@@ -13,7 +13,7 @@ function SelectedWorkCard({ theme, key,id, slug,projectName, projectDesc, projec
                 </div>
                 <div className="singleBlog--body">
                     <h3 className='mt-3 heading3' style={{color: theme.tertiary}}>{projectName}</h3>
-                    <p style={{color: theme.tertiary}} className="para1">{projectDesc}</p>
+                    <p style={{color: theme.tertiary}} className="para1 mt-3">A UX Case Study • Product Design • 2021</p>
                     <p style={{color: theme.tertiary}} className="para2">{projectShortDesc}</p>  
                 </div>
             </a>

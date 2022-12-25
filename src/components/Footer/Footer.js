@@ -39,10 +39,13 @@ function Footer() {
        }, [themeChange])
     return (
         <div className="footer" style={{backgroundColor: themes.primary}}>
-            <p style={{color: textColor}} className="heading2">
+            <p style={{color: textColor}} className="heading2 mt-1 mb-4">
                   💁🏻‍♀️ Get in touch ✨
             </p>
-            <div> <small style={{color: textColor}} className="para2">Find me on : </small>
+
+            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="para2 adjust-para2-font-size disable-on-sm">Reach out to me : </small> <p style={{marginLeft:'10px'}} className="para1 adjust-para2-font-size" >swati.pal2804@gmail.com</p></div>
+            <div className='mt-2' style={{color: textColor, display:'flex'}}> <small  className="para2 adjust-para2-font-size disable-on-sm">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="para1 adjust-para2-font-size">Book a session with me on <u>ADPList</u></p></div>
+            <div className='mt-2'> <small style={{color: textColor}} className="para2 adjust-para2-font-size disable-on-sm">Find me on : </small>
                         {socialsData.linkedIn && (
                             <a
                                 href={socialsData.linkedIn}
@@ -110,9 +113,6 @@ function Footer() {
                             </a>
                         )}
             </div>
-            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="para2">Reach out to me : </small> <p style={{marginLeft:'10px'}} className="para1" >swati.pal2804@gmail.com</p></div>
-            <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="para2">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="para1">Book a session with me on <u>ADPList</u></p></div>
-
         </div>
     )
 }

@@ -32,7 +32,7 @@ font-size: 17px;
 .landing--img {
   --img-size: 400px;
   position: absolute;
-  left: 33%;
+  left: 30%;
   transform: translateX(-50%);
   width: var(--img-size);
   height: var(--img-size);
@@ -43,15 +43,15 @@ font-size: 17px;
 }
 
 .landing--container-left {
-  flex: 33%;
+  flex: 30%;
   height: 100%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: flex-start;  
 }
 
 .lcl--content {
-  margin: 3rem;
+  margin-bottom : 3rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@ font-size: 17px;
 
 
 .landing--container-right {
-  flex: 67%;
+  flex: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -126,7 +126,7 @@ font-size: 17px;
     --img-size: 350px;
   }
   .lcl--content {
-    margin: 2rem;
+    /* margin: 2rem; */
   }
 
   .lcr--content h6 {
