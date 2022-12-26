@@ -98,6 +98,7 @@ function Footer() {
                             >
                                 
                             <img className='footer--social'  alt="logo" src={twitterLogo} style={{ width:'30px' }}/>
+                            
 
                             </a>
                         )}
