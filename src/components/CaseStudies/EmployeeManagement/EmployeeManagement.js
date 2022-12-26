@@ -315,7 +315,7 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 							</Col>
 
 							<Col md={12} className="mt-5">
-								<p className='para2' style={{color: textColor}}>The Heatmap is to show when and how many similar incidents happened in the past which has been already resolved:</p>
+								<p className='para2 mb-0' style={{color: textColor}}>The Heatmap is to show when and how many similar incidents happened in the past which has been already resolved:</p>
 							</Col>
 
 							<Col md={12} className="mt-5">
