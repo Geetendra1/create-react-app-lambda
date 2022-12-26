@@ -8,6 +8,14 @@ import {
     FaYoutube,
     FaBlogger,
 } from 'react-icons/fa';
+
+import linkedinLogo from '../../assets/png/linkedin-logo.png'
+import mediumLogo from '../../assets/png/medium 1.png'
+import dribbleLogo from '../../assets/png/Dribbble logo filled 1.png'
+import behanceLogo from '../../assets/png/behance-logo.png'
+import twitterLogo from '../../assets/png/twitter-logo.png'
+
+
 import { socialsData } from '../../data/socialsData';
 import { 
     darkTheme, lightTheme
@@ -46,6 +54,16 @@ function Footer() {
             <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="para2 adjust-para2-font-size disable-on-sm">Reach out to me : </small> <p style={{marginLeft:'10px'}} className="para1 adjust-para2-font-size" >swati.pal2804@gmail.com</p></div>
             <div className='mt-2' style={{color: textColor, display:'flex'}}> <small  className="para2 adjust-para2-font-size disable-on-sm">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="para1 adjust-para2-font-size">Book a session with me on <u>ADPList</u></p></div>
             <div className='mt-2'> <small style={{color: textColor}} className="para2 adjust-para2-font-size disable-on-sm">Find me on : </small>
+            {socialsData.medium && (
+                            <a
+                                href={socialsData.medium}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                 <img className='footer--social' src={mediumLogo} style={{ width:'30px' }}/>
+
+                            </a>
+                        )}
                         {socialsData.linkedIn && (
                             <a
                                 href={socialsData.linkedIn}
@@ -53,63 +71,41 @@ function Footer() {
                                 rel='noreferrer'
                                 className='m-0'
                             >
-                                <FaLinkedin
-                                    className='footer--social'
-                                    style={{ color: textColor }}
-                                    aria-label='LinkedIn'
-                                />
+                                <img className='footer--social' src={linkedinLogo} style={{ width:'30px' }}/>
                             </a>
                         )}
-                        {socialsData.github && (
+                        
+                        {socialsData.behance && (
                             <a
-                                href={socialsData.github}
+                                href={socialsData.behance}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaGithub
-                                    className='footer--social'
-                                    style={{ color: textColor  }}
-                                    aria-label='GitHub'
-                                />
+                                <img className='footer--social' src={behanceLogo} style={{ width:'30px' }}/>
+
                             </a>
                         )}
+
+                        {socialsData.dribble && (
+                            <a
+                                href={socialsData.dribble}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                            <img className='footer--social' src={dribbleLogo} style={{ width:'30px' }}/>
+
+                            </a>
+                        )}
+                      
                         {socialsData.twitter && (
                             <a
                                 href={socialsData.twitter}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaTwitter
-                                    className='footer--social'
-                                    style={{ color: textColor  }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.youtube && (
-                            <a
-                                href={socialsData.youtube}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaYoutube
-                                    className='footer--social'
-                                    style={{ color: textColor  }}
-                                    aria-label='YouTube'
-                                />
-                            </a>
-                        )}
-                        {socialsData.blogger && (
-                            <a
-                                href={socialsData.blogger}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaBlogger
-                                    className='footer--social'
-                                    style={{ color: textColor  }}
-                                    aria-label='Blogger'
-                                />
+                                
+                            <img className='footer--social' src={twitterLogo} style={{ width:'30px' }}/>
+
                             </a>
                         )}
             </div>

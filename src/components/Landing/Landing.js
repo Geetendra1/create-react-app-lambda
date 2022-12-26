@@ -8,6 +8,13 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 
+import linkedinLogo from '../../assets/png/linkedin-logo.png'
+import mediumLogo from '../../assets/png/medium 1.png'
+import dribbleLogo from '../../assets/png/Dribbble logo filled 1.png'
+import behanceLogo from '../../assets/png/behance-logo.png'
+import twitterLogo from '../../assets/png/twitter-logo.png'
+
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {
@@ -55,30 +62,44 @@ function Landing() {
                                 <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2 adjust-para2-font-size">Find me on :</small>
                                 </Col>
                                 <Col className='p-0'>
-                            {socialsData.linkedIn && (
+                            {socialsData.medium && (
+                            <a
+                                href={socialsData.medium}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img className='landing--social' src={mediumLogo} style={{ width:'30px' }}/>
+
+                            </a>
+                        )}
+                        {socialsData.linkedIn && (
                             <a
                                 href={socialsData.linkedIn}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaLinkedin
-                                    className='landing--social'
-                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary }}
-                                    aria-label='LinkedIn'
-                                />
+                                <img className='landing--social' src={linkedinLogo} style={{ width:'30px' }}/>
+
                             </a>
                         )}
-                        {socialsData.github && (
+                        {socialsData.behance && (
                             <a
-                                href={socialsData.github}
+                                href={socialsData.behance}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaGithub
-                                    className='landing--social'
-                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
-                                    aria-label='GitHub'
-                                />
+                            <img className='landing--social' src={behanceLogo} style={{ width:'30px' }}/>
+
+                            </a>
+                        )}
+                        {socialsData.dribble && (
+                            <a
+                                href={socialsData.dribble}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <img className='landing--social' src={dribbleLogo} style={{ width:'30px' }}/>
+
                             </a>
                         )}
                         {socialsData.twitter && (
@@ -87,37 +108,8 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaTwitter
-                                    className='landing--social'
-                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.youtube && (
-                            <a
-                                href={socialsData.youtube}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaYoutube
-                                    className='landing--social'
-                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
-                                    aria-label='YouTube'
-                                />
-                            </a>
-                        )}
-                        {socialsData.blogger && (
-                            <a
-                                href={socialsData.blogger}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaBlogger
-                                    className='landing--social'
-                                    style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }}
-                                    aria-label='Blogger'
-                                />
+                                <img className='landing--social' src={twitterLogo} style={{ width:'30px' }}/>
+
                             </a>
                         )}
                                 </Col>

@@ -39,7 +39,7 @@ const CaseStudyPage = ({history}) => {
   return (
     <>
     <CaseStudyNav />
-    {lastSegment === 'employee-management' && (
+    {lastSegment === 'incident-management-system' && (
       <EmployeeManagement themes={themes} />
     )}
     {lastSegment === 'geepack' && (

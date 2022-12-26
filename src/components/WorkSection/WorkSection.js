@@ -41,10 +41,10 @@ function WorkSection() {
         <>
                  <div id="projects" className='pt-5' style={{backgroundColor: themes.secondary}}>
                      <div className="work--header">
-                         <h1 className='heading1' style={{color: themes.tertiary}} >Selected Work</h1>
+                         <h1 className='heading1' style={{color: themes.tertiary}} >Work</h1>
                     </div>
                     <Row className='m-0 p-5 pt-3' >
-                           {selectedWork.slice(0, 2).map(work => (
+                           {selectedWork.slice(0, 4).map(work => (
                             <Col lg={6} md={12} sm={12} className="p-lg-5 pt-lg-0">
                             <SelectedWorkCard  
                             theme={themes}
@@ -60,7 +60,7 @@ function WorkSection() {
                    </Row>
                    </div>
                    {/* side projects */}
-                   <div id="projects" className='pt-5 pb-5' style={{backgroundColor: themes.secondary}}>
+                   {/* <div id="projects" className='pt-5 pb-5' style={{backgroundColor: themes.secondary}}>
                      <div className="side-work--header">
                          <h1 className='heading1' style={{color: themes.tertiary}} >Concept Based Work</h1>
                     </div>
@@ -79,7 +79,7 @@ function WorkSection() {
                             </Col>
                         ))}
                    </Row>
-                   </div>
+                   </div> */}
 
                    {/* <SimilarCaseStudies/> */}
 

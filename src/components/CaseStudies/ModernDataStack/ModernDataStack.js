@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-import one from '../../../assets/svg/about/mdshero.svg'
+import one from '../../../assets/png/MDS hero.svg'
 import two from '../../../assets/svg/about/mock up.svg'
 import three from '../../../assets/svg/about/illust.svg'
 import six from '../../../assets/svg/about/process.svg'

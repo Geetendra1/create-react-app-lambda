@@ -182,7 +182,7 @@ function Navbar({history}) {
     return (
         <div className='navbar-s' >
             <div className='navbar--container m-5'>
-                <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary   }}>
+                <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  , fontFamily:'Inter' }}>
                     {shortname(headerData.name)}
                 </p>
 
@@ -193,17 +193,31 @@ function Navbar({history}) {
                     aria-label='Menu'
                 />
                 
-                <div className={classes.navMenuOpen}>
-                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === '' ? '1' : '0.4'}}>Home</div></a>
-                    {/* <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'work' ? '1' : '0.4'}}>Work</div> */}
-                    {/* <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'resume' ? '1' : '0.4'}}> */}
-                        <a href={Pdf} without rel="noopener noreferrer" target="_blank" style={{textDecoration:'none'}}>
-                        {/* <button trailingIcon="picture_as_pdf" label="Resume"> */}
-                        <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.4'}}>Resume</div>
-                        {/* </button> */}
+                <div className={`${classes.navMenuOpen}`}>
+                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>
+                {lastSegment === '' ? (
+                            <p style={{fontFamily:'Inter' , fontWeight:'500'}}>Home</p>
+                        ) : (
+                            <p style={{fontFamily:'Inter' , fontWeight:'300'}}>Home</p>
+                        ) }
+                </div>
+                </a>                 
+                <a href={Pdf} without rel="noopener noreferrer" target="_blank" style={{textDecoration:'none'}}>
+                        <div className={classes.navMenuOpenItems} >
+                        {lastSegment === 'resume' ? (
+                            <p style={{fontFamily:'Inter' , fontWeight:'500'}}>Resume</p>
+                        ) : (
+                            <p style={{fontFamily:'Inter' , fontWeight:'300'}}>Resume</p>
+                        ) }
+                        </div>
                         </a>
-                    {/* </div> */}
-                    <a href='/about' style={{textDecoration:'none'}} > <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.4'}}>About Me</div></a>
+                    <a href='/about' style={{textDecoration:'none'}} > <div className={classes.navMenuOpenItems}>
+                        {lastSegment === 'about' ? (
+                            <p style={{fontFamily:'Inter' , fontWeight:'500'}}>About Me</p>
+                        ) : (
+                            <p style={{fontFamily:'Inter' , fontWeight:'300'}}>About Me</p>
+                        ) }
+                        </div></a>
 
                     {/* <img onClick={handleTheme} src={themes.themeLogo} alt="s" /> */}
                 </div>

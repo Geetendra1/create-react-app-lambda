@@ -1,5 +1,5 @@
 import React,{ useLayoutEffect, useState} from 'react';
-import one from '../../../assets/svg/about/geepack-hero .svg'
+import one from '../../../assets/png/GEPACK hero.svg'
 import two from '../../../assets/svg/about/pain.svg'
 import three from '../../../assets/svg/about/cubes 9 2.svg'
 import four from '../../../assets/svg/about/soln.svg'

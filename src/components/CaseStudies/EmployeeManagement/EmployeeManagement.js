@@ -1,6 +1,6 @@
 		import React from 'react';
 		import './EmployeeManagement.css'
-		import one from '../../../assets/svg/about/hero.svg'
+		import one from '../../../assets/png/IMS hero (1).svg'
 		import first from '../../../assets/png/old user flow.png'
 		import second from '../../../assets/png/new user flow.png'
 		// import third from '../../../assets/svg/about/Monitor - List 3 2.svg'
