@@ -1,13 +1,6 @@
 import React, { useContext,useEffect,useState } from 'react'
 import './Footer.css'
 import { ThemeContext } from '../../contexts/ThemeContext'
-import {
-    FaTwitter,
-    FaLinkedin,
-    FaGithub,
-    FaYoutube,
-    FaBlogger,
-} from 'react-icons/fa';
 
 import linkedinLogo from '../../assets/png/linkedin-logo.png'
 import mediumLogo from '../../assets/png/medium 1.png'
@@ -60,7 +53,7 @@ function Footer() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                 <img className='footer--social' src={mediumLogo} style={{ width:'30px' }}/>
+                                 <img className='footer--social'  alt="logo" src={mediumLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
@@ -71,7 +64,7 @@ function Footer() {
                                 rel='noreferrer'
                                 className='m-0'
                             >
-                                <img className='footer--social' src={linkedinLogo} style={{ width:'30px' }}/>
+                                <img className='footer--social'  alt="logo" src={linkedinLogo} style={{ width:'30px' }}/>
                             </a>
                         )}
                         
@@ -81,7 +74,7 @@ function Footer() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <img className='footer--social' src={behanceLogo} style={{ width:'30px' }}/>
+                                <img className='footer--social'  alt="logo" src={behanceLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
@@ -92,7 +85,7 @@ function Footer() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                            <img className='footer--social' src={dribbleLogo} style={{ width:'30px' }}/>
+                            <img className='footer--social'  alt="logo" src={dribbleLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
@@ -104,7 +97,7 @@ function Footer() {
                                 rel='noreferrer'
                             >
                                 
-                            <img className='footer--social' src={twitterLogo} style={{ width:'30px' }}/>
+                            <img className='footer--social'  alt="logo" src={twitterLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}

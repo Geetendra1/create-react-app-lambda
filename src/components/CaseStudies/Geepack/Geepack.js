@@ -1,12 +1,9 @@
 import React,{ useLayoutEffect, useState} from 'react';
 import one from '../../../assets/png/GEPACK hero.svg'
-import two from '../../../assets/svg/about/pain.svg'
 import three from '../../../assets/svg/about/cubes 9 2.svg'
-import four from '../../../assets/svg/about/soln.svg'
 import five from '../../../assets/svg/about/Rectangle 3.svg'
 import six from '../../../assets/svg/about/flow.svg'
 import seven from '../../../assets/png/font & colors.png'
-import eight from '../../../assets/svg/about/colors.svg'
 import nine from '../../../assets/svg/about/home.svg'
 import ten from '../../../assets/svg/about/tab bar content (1).svg'
 import eleven from '../../../assets/svg/about/scan baggage.svg'

@@ -17,13 +17,7 @@ import twitterLogo from '../../assets/png/twitter-logo.png'
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {
-    FaTwitter,
-    FaLinkedin,
-    FaGithub,
-    FaYoutube,
-    FaBlogger,
-} from 'react-icons/fa';
+
 import Navbar from '../Navbar/Navbar';
 import { 
     darkTheme, lightTheme
@@ -68,7 +62,7 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <img className='landing--social' src={mediumLogo} style={{ width:'30px' }}/>
+                                <img className='landing--social' alt="logo" src={mediumLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
@@ -78,7 +72,7 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <img className='landing--social' src={linkedinLogo} style={{ width:'30px' }}/>
+                                <img className='landing--social'  alt="logo" src={linkedinLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
@@ -88,7 +82,7 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                            <img className='landing--social' src={behanceLogo} style={{ width:'30px' }}/>
+                            <img className='landing--social'  alt="logo" src={behanceLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
@@ -98,7 +92,7 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <img className='landing--social' src={dribbleLogo} style={{ width:'30px' }}/>
+                                <img className='landing--social'  alt="logo" src={dribbleLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
@@ -108,7 +102,7 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <img className='landing--social' src={twitterLogo} style={{ width:'30px' }}/>
+                                <img className='landing--social'  alt="logo" src={twitterLogo} style={{ width:'30px' }}/>
 
                             </a>
                         )}
