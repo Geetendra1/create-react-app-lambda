@@ -118,22 +118,22 @@
 				{/* rest of the case study */}
 				<Container className='mt-5' style={{ width:"70%"}}>
 					<Row className="">
-						<Col md={4}>
+						<Col md={12} lg={4}>
 							<Image src={twelveth} style={{width:'300px'}} />
 						</Col>
-						<Col md={8}>
+						<Col md={12} lg={8}>
 								<h3 className="heading4" style={{color: textColor}} >Cliff.ai overview</h3>
 							   <p className='para2 mb-5'  style={{color: textColor}}>Dashboards are a bit messy, and also because of the large number of data, there is a high risk of missing the anomalies. At Cliff.ai, we work on ‘actively monitoring’ the key metrics and catch unexpected spikes or dips in the metrics <span className='para1'>AUTOMATICALLY and inform our clients.</span></p>
 						</Col>
 					</Row>
 
 					<Row className="mt-5 " >
-							<Col md={8}>
+							<Col lg={8} md={12}>
 								<h3 className="heading4" style={{color: textColor}} >What happened?</h3>
 								<p className='para2' style={{color: textColor}}>At Cliff.ai, we had been hearing our users’ complaints about not being able to receive the alert notifications even after the detection of anomalies. We dug deep into the problem and discovered that users weren’t receiving the notifications because of the complex process of setting up the “Alert Rules”. And the functionality of whom and when to notify was bare-bones.</p>
 								<p className='para2' style={{color: textColor}}>"To address this, I conducted formative user research to identify the key problems, developed new nomenclature and information hierarchies, and designed a new alert monitoring system"</p>
 							</Col>
-							<Col md={4} className="d-flex justify-content-end mb-5" >
+							<Col md={12} lg={4} className="d-flex justify-content-end mb-5" >
 							<Image src={thirteen} style={{width:'320px'}} className="mb-5" />
 							</Col>
 					</Row>
