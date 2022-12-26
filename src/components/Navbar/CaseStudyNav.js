@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
 import { withRouter } from 'react-router-dom';
+import Pdf from '../../swati-resume.pdf';
 
 import { 
     darkTheme, lightTheme
@@ -18,7 +19,7 @@ import './CaseStudyNav.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
 function CaseStudyNav({history}) {
-    const { theme, setHandleDrawer ,setTheme } = useContext(ThemeContext);
+    const { theme, setHandleDrawer } = useContext(ThemeContext);
     const [themes, setThemes] = useState(theme)
     const lastSegment = history.location.pathname.split("/").pop()
     console.log('lastSegment',lastSegment);
@@ -49,15 +50,15 @@ function CaseStudyNav({history}) {
     };
 
 
-    const handleTheme = () => {
-        if(theme.type === 'dark') {
-            localStorage.setItem('theme', 'light')
-            setTheme(lightTheme)
-        } else {
-            setTheme(darkTheme)
-            localStorage.setItem('theme', 'dark')
-        }
-    }
+    // const handleTheme = () => {
+    //     if(theme.type === 'dark') {
+    //         localStorage.setItem('theme', 'light')
+    //         setTheme(lightTheme)
+    //     } else {
+    //         setTheme(darkTheme)
+    //         localStorage.setItem('theme', 'dark')
+    //     }
+    // }
 
     const useStyles = makeStyles((t) => ({
         navMenuOpen : {
@@ -71,7 +72,7 @@ function CaseStudyNav({history}) {
             fontWeight: 'normal',
             fontSize: '16px',
             opacity: '1',
-            margin:'30px',
+            margin:'45px',
             '&:hover': {
                 color: themes.tertiary,
                 opacity: '0.7',
@@ -194,11 +195,15 @@ function CaseStudyNav({history}) {
                 
                 <div className={`${classes.navMenuOpen}`}>
                 <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === '' ? '1' : '0.5'}}>Home</div></a>
-                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'work' ? '1' : '0.5'}}>Work</div>
-                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'resume' ? '1' : '0.5'}}>Resume</div>
+                    {/* <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'work' ? '1' : '0.5'}}>Work</div> */}
+                    <a href={Pdf} without rel="noopener noreferrer" target="_blank" style={{textDecoration:'none'}}>
+                        {/* <button trailingIcon="picture_as_pdf" label="Resume"> */}
+                        <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.4'}}>Resume</div>
+                        {/* </button> */}
+                        </a>
                     <a href='/about' style={{textDecoration:'none'}} > <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.5'}}>About Me</div></a>
 
-                    <img onClick={handleTheme} src={themes.themeLogo} alt="s" />
+                    {/* <img onClick={handleTheme} src={themes.themeLogo} alt="s" /> */}
                 </div>
                 
             </div>

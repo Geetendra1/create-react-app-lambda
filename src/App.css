@@ -1,13 +1,13 @@
 :root {
-    font-family: 'Mulish';
+    font-family: 'Inter';
     /* --primaryFont: 'Poppins', sans-serif; */
-    --primaryFont: 'Mulish';
+    --primaryFont: 'Inter';
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
 
 .small-text {
-    font-family: 'Mulish';
+    font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -18,7 +18,7 @@ line-height: 32px;
 /* top most headings */
 
 .heading0{
-    font-family: 'Merriweather';
+    font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 64px;
@@ -26,7 +26,7 @@ line-height: 80px;
 }
 
 .heading1 {
-    font-family: 'Merriweather';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -34,7 +34,7 @@ line-height: 80px;
 
 /* heading above paragraph */
 .heading3 {
-    font-family: 'Merriweather';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -42,45 +42,52 @@ line-height: 80px;
 
 /* hero section text */
 .heading2 {
-    font-family: 'Mulish';
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 20px;
+}
+/* hero section bold text */
+.heading6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
     font-size: 20px;
 }
 
 .heading4 {
-    font-family: 'Merriweather';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
 }
 
 .heading5{
-font-family: 'Merriweather';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 300;
 font-size: 24px;
 }
 /*  */
 .para1 {
-    font-family: 'Mulish';
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 28px;
   }
 
   /*  */
   .para2 {
-    font-family: 'Mulish';
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 28px;
     /* text-transform: capitalize; */
   }
   .para3 {
-    font-family: 'Mulish';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

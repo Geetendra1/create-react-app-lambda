@@ -49,7 +49,7 @@ function Landing() {
                     
                     <div className='lcl--content'>
                     <Row className='w-100'>
-                        <Col md={12} className="w-100 d-flex justify-content-center">
+                        <Col md={12} className="w-100 d-flex justify-content-center mb-4">
                             <Row>
                                 <Col className='col-auto disable-on-sm '>
                                 <small style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  }} className="para2 adjust-para2-font-size">Find me on :</small>
@@ -135,7 +135,7 @@ function Landing() {
                         </Col>
                     </Row>
                         
-                    </div>
+                    </div> 
                 </div>
                 <img
                     src={headerData.image}
@@ -143,7 +143,7 @@ function Landing() {
                     className='landing--img'
                     style={{
                         opacity: `${drawerOpen ? '0' : '1'}`,
-                        borderColor: themes.tertiary,
+                        // borderColor: themes.tertiary,
                     }}
                 />
                 <div
@@ -154,12 +154,12 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: themes.tertiary }}
                     >
-                        <p className='heading2'>Hi 👋</p>
-                        <h3 style={{fontSize:'40px'}}><span className='heading2'>I'm</span> {headerData.name}</h3>
+                        <p className='heading6'>Hi 👋</p>
+                        <h3 style={{fontSize:'40px'}}><span className='heading6'>I'm</span> {headerData.name}</h3>
                         {/* <span style={{display:'flex'}}><span className=''></span><h3>{headerData.name}</h3></span> */}
-                        <p className='heading2'>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
-                        <p className='heading2'>Currently pursuing MS in Human-Computer Interaction @<strong> Indiana University - Purdue University Indianapolis, United States.</strong> </p>
-                        <p className='heading2'>I previously have designed products at Cliff.ai (GTM Hub) & Nickelfox Technologies.</p>
+                        <p className='heading6'>A designer who’s passionate about learning design techniques to solve problems and to improve user experiences.</p>
+                        <p className='heading6'>Currently pursuing MS in Human-Computer Interaction @<span className='heading2'> Indiana University - Purdue University Indianapolis, United States.</span> </p>
+                        <p className='heading6'>I previously have designed products at Cliff.ai (GTM Hub) & Nickelfox Technologies.</p>
                         {/* <p>{headerData.desciption}</p> */}
 
                         {/* <div className='lcr-buttonContainer'>

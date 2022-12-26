@@ -17,8 +17,10 @@ import {
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import Pdf from '../../swati-resume.pdf';
+
 function Navbar({history}) {
-    const { theme, setHandleDrawer ,setTheme } = useContext(ThemeContext);
+    const { theme, setHandleDrawer } = useContext(ThemeContext);
     const [themes, setThemes] = useState(theme)
     const themeChange = localStorage.getItem('theme')
     const lastSegment = history.location.pathname.split("/").pop()
@@ -46,15 +48,15 @@ function Navbar({history}) {
      }
        }, [themeChange])
 
-    const handleTheme = () => {
-        if(theme.type === 'dark') {
-            localStorage.setItem('theme', 'light')
-            setTheme(lightTheme)
-        } else {
-            setTheme(darkTheme)
-            localStorage.setItem('theme', 'dark')
-        }
-    }
+    // const handleTheme = () => {
+    //     if(theme.type === 'dark') {
+    //         localStorage.setItem('theme', 'light')
+    //         setTheme(lightTheme)
+    //     } else {
+    //         setTheme(darkTheme)
+    //         localStorage.setItem('theme', 'dark')
+    //     }
+    // }
 
     const useStyles = makeStyles((t) => ({
         navMenuOpen : {
@@ -68,7 +70,7 @@ function Navbar({history}) {
             fontWeight: 'normal',
             fontSize: '16px',
             opacity: '1',
-            margin:'30px',
+            marginLeft:'100px',
             '&:hover': {
                 color: themes.tertiary,
                 opacity: '0.7',
@@ -193,11 +195,17 @@ function Navbar({history}) {
                 
                 <div className={classes.navMenuOpen}>
                 <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === '' ? '1' : '0.4'}}>Home</div></a>
-                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'work' ? '1' : '0.4'}}>Work</div>
-                    <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'resume' ? '1' : '0.4'}}>Resume</div>
+                    {/* <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'work' ? '1' : '0.4'}}>Work</div> */}
+                    {/* <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'resume' ? '1' : '0.4'}}> */}
+                        <a href={Pdf} without rel="noopener noreferrer" target="_blank" style={{textDecoration:'none'}}>
+                        {/* <button trailingIcon="picture_as_pdf" label="Resume"> */}
+                        <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.4'}}>Resume</div>
+                        {/* </button> */}
+                        </a>
+                    {/* </div> */}
                     <a href='/about' style={{textDecoration:'none'}} > <div className={classes.navMenuOpenItems} style={{opacity: lastSegment === 'about' ? '1' : '0.4'}}>About Me</div></a>
 
-                    <img onClick={handleTheme} src={themes.themeLogo} alt="s" />
+                    {/* <img onClick={handleTheme} src={themes.themeLogo} alt="s" /> */}
                 </div>
                 
             </div>

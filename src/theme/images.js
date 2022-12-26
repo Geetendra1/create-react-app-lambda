@@ -17,7 +17,7 @@ import yellowThemegirl from '../assets/svg/about/yellowTheme-girl.svg'
 import swatisImage from '../assets/svg/about/SwatiImage.svg'
 import DarkThemeLogo from '../assets/svg/about/dark.svg'
 import LightThemeLogo from '../assets/svg/about/light.svg'
-
+import Mee from '../assets/png/Mee.png'
 import eduBlue from '../assets/svg/education/eduBlue.svg'
 import eduGreen from '../assets/svg/education/eduGreen.svg'
 import eduBlack from '../assets/svg/education/eduBlack.svg'
@@ -51,5 +51,5 @@ export {
     orangeThemegirl, pinkThemeboy, pinkThemegirl, purpleThemeboy, purpleThemegirl, redThemeboy, redThemegirl,
     yellowThemeboy,yellowThemegirl,eduBlue,eduBlack,eduGreen,eduOrange,eduPink,eduPurple,eduRed,eduYellow,
     expBlue,expBlack,expGreen,expOrange,expPink,expPurple,expRed,expYellow,contactsBlue,contactsBlack,
-    contactsGreen,contactsOrange,contactsPink,contactsPurple,contactsRed,contactsYellow,swatisImage
+    contactsGreen,contactsOrange,contactsPink,contactsPurple,contactsRed,contactsYellow,swatisImage,Mee
 }
