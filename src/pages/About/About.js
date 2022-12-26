@@ -55,16 +55,18 @@ const About = () => {
                     alt=''
                     className='hero--img'
                 />
-                <div className='hero-right mt-5' style={{color: 'white'}}>
-                    <p className='heading5'>The philosphy I follow</p>
+                <Row className='hero-right mt-5' style={{color: 'white'}}>
+                    <Col md={10}>
+                    <p className='heading6'>The philosphy I follow</p>
                     <h1 className='heading0'>The only way to do great work is to do what you love & love what you do.</h1>
-                </div>
+                    </Col>
+                </Row>
         </div>
-        <div className='about-description mb-5' style={{width:"100%", height:"100%", backgroundColor:themes.secondary}}  >
-            <Container>
+        {/* <div className='about-description mb-5' style={{width:"100%", height:"100%", backgroundColor:themes.secondary}}  > */}
+            <Container className='about-description mb-5' style={{ width:"70%", height:"100%", backgroundColor:themes.secondary}}>
 
             <Row className='d-flex justify-content-center'>
-                <Col md={9} className='d-flex justify-content-start'>
+                <Col className='d-flex justify-content-start'>
                     <div style={{color:themes.tertiary}}>
                         <h1 className='heading1' style={{color:themes.tertiary}} >About Me 🚀</h1>
                         <p style={{color:themes.tertiary}} className='para1'>An Engineer  »»  A Banker  »»  & Finally a Designer 👩🏻‍💻</p>
@@ -77,9 +79,9 @@ const About = () => {
                 </Col>
             </Row>
             </Container>
-        </div>
-        <div className='about-interestes pb-5' style={{width:"100%", height:"100%", backgroundColor:themes.primary}}  >
-          <Container>
+        {/* </div> */}
+        <div className='about-interestes pb-5' style={{width:"100%", backgroundColor:themes.primary}}  >
+          <Container >
             <Row className='d-flex justify-content-center'>
                 <Col md={9} className='d-flex justify-content-start mb-5'>
                 <div className='mt-5'>

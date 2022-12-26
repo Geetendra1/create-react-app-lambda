@@ -32,8 +32,10 @@
 }
 
 .em-border-left{
-    border-left-style: solid;
-    border-left-color:  #29244F;;
+
+    border-left: 2px solid #29BB89;
+    padding-top: 15px;
+    padding-left: 20px;
 }
 
 /* .em-first-container-col {

@@ -1,3 +1,5 @@
+
+
 import React, { useContext, useState,useEffect } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade';
@@ -72,7 +74,7 @@ function CaseStudyNav({history}) {
             fontWeight: 'normal',
             fontSize: '16px',
             opacity: '1',
-            margin:'45px',
+            marginLeft:'100px',
             '&:hover': {
                 color: themes.tertiary,
                 opacity: '0.7',

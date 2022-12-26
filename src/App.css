@@ -19,10 +19,10 @@ line-height: 32px;
 
 .heading0{
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 80px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 72px;
 }
 
 .heading1 {
