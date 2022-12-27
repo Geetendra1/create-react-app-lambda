@@ -32,7 +32,7 @@ import journal from '../../../assets/png/categories (2).png'
 import podcast from '../../../assets/png/companies (2).png' 
 import resources from '../../../assets/png/categories (1).png' 
 import community from '../../../assets/png/companies (1).png' 
-
+import morescreen from '../../../assets/png/13.png' 
 import twenty from '../../../assets/png/14.png' 
 import twentyone from '../../../assets/png/more screens 1.png' 
 
@@ -101,17 +101,17 @@ const ModernDataStack = () => {
                 <Container className='mt-5' style={{ width:"70%"}}>
                     {/* project brief */}
 					<Row className=''>
-							<Col md={6} lg={6} sm={12} className="my-auto">
+							<Col md={6} lg={8} sm={12} className="my-auto">
                                 <Row>
-                                    <Col>
+                                    <Col lg={11}>
                                     <h3 className='heading4'>Project brief</h3>
                                     <p className='para2'>The Modern Data Stack is a set of technologies that are used to collect, store, process, and analyze data in a modern data infrastructure to gain valuable insights and enable organizations to make informed decisions.</p>
                                     <p className='para2'>This is a platform that has everything related to data stacks, be it the data stacks and tools used by the companies, journals, podcasts, articles, or videos on modern data stacks, and influencers all in one place, It showcases how some of the most amazing companies in the world are organizing their data stacks, what tools they are using, and why. </p>
                                     </Col>  
                                 </Row>
 							</Col>
-							<Col md={6} lg={6} sm={12} className="d-flex justify-content-end" >
-                             <img src={two} alt={'Employee Management'} style={{width:"auto", height:"500px"}} />
+							<Col md={6} lg={4} sm={12} className="d-flex justify-content-end" >
+                             <img src={two} alt={'Employee Management'} style={{width:"auto", height:"400px"}} />
 							</Col>
 					</Row>
 
@@ -178,15 +178,15 @@ const ModernDataStack = () => {
 
                     {/* motivation */}
                     <Row className='mt-5 mb-5'>
-							<Col md={6} lg={6} sm={12} className="my-auto">
+							<Col md={6} lg={7} sm={12} className="my-auto">
                                 <Row>
-                                    <Col>
+                                    <Col lg={11}>
                                     <h3 className='heading4'>Motivation behind building The MDS</h3>
                                     <p className='para2'>In the discussions with our clients, we observed that people are fed up with browsing about the modern data stack online, and this was the pain-point we identified as something we could simplify for our users by having detailed information about data stacks in one place. This motivated us to take up this project. We wanted to help people with data stack resources, so that they could know which stacks are trending in the top companies, learn best practices about data stacks, and choose stacks for their own use cases!</p>
                                     </Col>  
                                 </Row>
 							</Col>
-							<Col md={6} lg={6} sm={12} className="d-flex justify-content-end" >
+							<Col md={6} lg={5} sm={12} className="d-flex justify-content-end" >
                              <img src={three} alt={'Employee Management'} style={{width:"100%", height:"300px"}} />
 							</Col>
 					</Row>
@@ -306,51 +306,46 @@ const ModernDataStack = () => {
 							<Col md={12} className='mt-5'>
                                 <Row>
                                     <Col>
-                                    <h3 lassName='heading4'>high-fidelity screens</h3>
+                                    <h3 lassName='heading4'>High-fidelity screens</h3>
                                     <p className='para2'>After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
                                     </Col>  
                                 </Row>
 							</Col>
-							<Col md={6} className='mt-4 mb-5 p-4'>
+							<Col md={6} className='mt-5 p-4'>
                              <Image src={categories} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
-                            <Col md={6} className='mt-4 mb-5 p-4'>
+                            <Col md={6} className='mt-5 p-4'>
                              <Image src={companies} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
 
-                            <Col md={6} className='mt-4 mb-5 p-4'>
+                            <Col md={6} className='mt-5 p-4'>
                              <Image src={resources} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
-                            <Col md={6} className='mt-4 mb-5 p-4'>
+                            <Col md={6} className='mt-5 p-4'>
                              <Image src={community} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
 
-                            <Col md={6} className='mt-4 mb-5 p-4'>
+                            <Col md={6} className='mt-5 p-4'>
                              <Image src={journal} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
-                            <Col md={6} className='mt-4 mb-5 p-4'>
+                            <Col md={6} className='mt-5 p-4'>
                              <Image src={podcast} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
 
-                            <Col md={6} className='mt-4 mb-5 p-4'>
+                            <Col md={6} className='mt-5 p-4'>
                              <Image src={job} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
-                            <Col md={6} className='mt-4 mb-5 p-4'>
+                            <Col md={6} className='mt-5 p-4'>
                              <Image src={profile} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
 					</Row>
                 </Container>
 
                 <div className=''>
-                <Container className='mt-5' style={{ width:"70%"}}>
-                    <Row>
-                    <h3 className='heading4'>More screens</h3>
-                    <p className='mt-3 para2' >These are the visuals of the entire platform. It includes empty state, welcome screens, Navigation bar, error state etc</p>
-                    </Row>
-                </Container>
+
 
             <Row className='mt-5'>
-            <Image className='mb-5' src={twentyone} alt={'Employee Management'} style={{width:"100%", height:"100%"}} />
+            <Image className='mb-5' src={morescreen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} />
             </Row>
                 </div>
         
