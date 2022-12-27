@@ -56,7 +56,7 @@ const About = () => {
                     className='hero--img'
                 />
                 <Row className='hero-right mt-5' style={{color: 'white'}}>
-                    <Col md={10}>
+                    <Col md={12}>
                     <p className='heading6'>The philosphy I follow</p>
                     <h1 className='heading0'>The only way to do great work is to do what you love & love what you do.</h1>
                     </Col>

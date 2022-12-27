@@ -186,9 +186,11 @@ function CaseStudyNav({history}) {
     return (
         <div className='navbar-c' style={{backgroundColor:themes.secondary}}>
             <div className='navbar--container-c m-5' style={{backgroundColor:themes.secondary}}>
+            <a href="/" style={{textDecoration:'none'}}>
               <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.tertiary : themes.tertiary  , fontFamily:'Inter' }}>
                     {shortname(headerData.name)}
                 </p>
+            </a>
                 <IoMenuSharp
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
