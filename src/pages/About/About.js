@@ -83,17 +83,10 @@ const About = () => {
         <div className='about-interestes pb-5' style={{width:"100%", backgroundColor:themes.primary}}  >
           <Container >
             <Row className='d-flex justify-content-center'>
-                <Col md={9} className='d-flex justify-content-start mb-5'>
+                <Col md={9} className='d-flex justify-content-start mb-4'>
                 <div className='mt-5'>
                 <h1 className='heading1' style={{color:'white'}} >My interests & hobbies</h1>
                 <p className='para2' style={{color:'white'}}>I love to explore new places and capture the beauty of the world around them. I believe and feel that these two activities can provide endless opportunities for adventure, creativity, and self-expression. Additionally, I love doing activities which allow me to express myself, that is, art and doodle.</p>
-                
-                {/* <h3 style={{color:'white'}} className='heading3 mt-5'>I love to click  📸</h3>
-
-
-                <h3 style={{color:'white'}} className='heading3 mt-5'>Traveling is the best medicine for me 🏖</h3>
-                <h3 style={{color:'white'}} className='heading3 mt-5'>I greatly enjoy digital art and doodling 🌈</h3> */}
-
                 </div>
                 </Col>
             </Row>
@@ -101,7 +94,7 @@ const About = () => {
           <Container>
             <Row className='d-flex justify-content-center'>
                 <Col md={9} className='d-flex justify-content-start mb-5'>
-                <div className='mt-3'>
+                <div className=''>
                 {/* <p className='para2' style={{color:'white'}}>I love to explore new places and capture the beauty of the world around them. I believe and feel that these two activities can provide endless opportunities for adventure, creativity, and self-expression. Additionally, I love doing activities which allow me to express myself, that is, art and doodle.</p> */}
                 <h3 style={{color:'white'}} className='heading3'>I love to click  📸</h3>
                 <Row>
