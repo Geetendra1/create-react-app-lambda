@@ -1,18 +1,18 @@
-import React,{ useLayoutEffect, useState} from 'react';
+import React from 'react';
 import one from '../../../assets/png/GEPACK hero.svg'
 import three from '../../../assets/svg/about/cubes 9 2.svg'
 import five from '../../../assets/svg/about/Rectangle 3.svg'
 import six from '../../../assets/svg/about/flow.svg'
 import seven from '../../../assets/png/font & colors.png'
-import nine from '../../../assets/svg/about/home.svg'
-import ten from '../../../assets/svg/about/tab bar content (1).svg'
-import eleven from '../../../assets/svg/about/scan baggage.svg'
-import twelve from '../../../assets/svg/about/Group 36173.svg'
-import thirteen from '../../../assets/svg/about/status.svg'
-import fifteen from '../../../assets/svg/about/UI 9.svg'
-import eighteen from '../../../assets/png/navigation.png'
-import sixteen from '../../../assets/svg/about/UI 10.svg'
-import seventeen from '../../../assets/png/15.png'
+import nine from '../../../assets/png/1. home.png'
+import ten from '../../../assets/png/tab bar.png'
+import eleven from '../../../assets/png/3. scan qr.png'
+import twelve from '../../../assets/png/add new trip.png'
+import thirteen from '../../../assets/png/5. status update.png'
+import fifteen from '../../../assets/png/8. more screens.png'
+import eighteen from '../../../assets/png/airport navigation.png'
+import sixteen from '../../../assets/png/9. dark mode.png'
+import seventeen from '../../../assets/png/7. splash ob wt.png'
 import mdspointer from '../../../assets/png/checkbox_square 1.png'
 import icon1 from '../../../assets/png/Group 36059.png'
 import icon2 from '../../../assets/png/Group 36060.png'
@@ -30,21 +30,9 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-      function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
-      }
-      window.addEventListener("resize", updateSize);
-      updateSize();
-      return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
-  }
+
 
 const Geepack = () => {
-    const [width] = useWindowSize();      
 
     return (
         <>
@@ -123,7 +111,7 @@ const Geepack = () => {
 							<Col  md={12}>
 							<p className="para2"> During this COVID-19 pandemic, as soon as the flight started operating, I decided to go back to my home. When I was dropping my bag on the counter for check-in, the luggage tag was not fastened properly, which got me concerned for my luggage. It’s a headache if you lose your property at the airport!</p>
                             <p className="para2"> After landing, it took more time than usual to bring the bags to the belt. I kept waiting. Minutes later, a few bags were on the belt. As soon as people saw it coming, they rushed to the belt, forgetting about social distancing.</p>
-                            <p className="para2"> After watching all this, I thought it would be a nice idea to design an application that could track the luggage to prevent all the hassle!</p>
+                            <p className="para2 mb-5"> After watching all this, I thought it would be a nice idea to design an application that could track the luggage to prevent all the hassle!</p>
 							</Col>
 					</Row>
 
@@ -133,10 +121,10 @@ const Geepack = () => {
                     <Row className="mt-5">
 							<Col md={12}>
 								<h3 className='heading4'>User’s Pain-Points</h3>
-							<p className="para2"> GEPACK is a baggage tracking app that helps its users track their baggage from the very beginning of their journey until they receive it from the belt. It helps the users stay relaxed and relieved while traveling as they can track their baggage and check the status anytime, along with many other features.</p>
+							<p className="para2">There are several pain points that travelers may experience while traveling by air:</p>
 							</Col>
                             <Col md={12} className="mt-2">
-							<Row className='mt-2 mb-5' >
+							<Row className='mt-2 mb-3' >
                         <Col md={12} sm={12} lg={6}>
                             <Row>
                                 <Col className='col-auto '><img src={mdspointer} alt="Inadequate Search Engine Optimization" /></Col>
@@ -177,7 +165,7 @@ const Geepack = () => {
                         </Col>
                         <Col md={12} sm={12} lg={6}> 
                             <Row>
-                                <Col className='col-auto '><img src={mdspointer} alt="Limited access"/></Col>
+                                <Col className='col-auto'><img src={mdspointer} alt="Limited access"/></Col>
                                 <Col><p className='para2'>Sometimes travelers, by mistake,<span className='para1'>exchange their baggage</span>  or leave their baggage behind at the airport.</p></Col>
                             </Row>
                         </Col>
@@ -193,10 +181,10 @@ const Geepack = () => {
 								<h3 className='heading4'>Key Insights</h3>
 							</Col>
 							<Col  md={12}>
-							<p className="para2"> While traveling, people deal with different problems and challenges at the airport. I did research and found some of the problems exist in real and have written down in the form of user cases:</p>
+							<p className="para2"> While traveling, people deal with different problems and challenges at the airport. To identify the diversity of problems people face during their travel experiences, I did research and through my observation, interviews, and surveys with travelers and found some of the problems exist in real and those are:</p>
 							</Col>
-                            <Col md={12} className="mt-2">
-							<Image src={three} alt={'Employee Management'} style={{width:"80%", height:"80%"}} fluid />
+                            <Col md={12} className="mt-2 d-flex justify-content-start" >
+							<Image className='mb-5' src={three} alt={'Employee Management'} style={{width:"80%", height:"100%"}} fluid />
 							</Col>
 					</Row>
 
@@ -255,12 +243,12 @@ const Geepack = () => {
 
 
                     <Row className="mt-5 disppla">
-                            <Col md={7} style={{display:'flex',justifyContent: 'start', alignItems:'center'}}>
-                                <Row >
-                                    <Col md={12}>
+                            <Col md={7} style={{display:'flex',justifyContent: 'start'}}>
+                                <Row className='mt-5'>
+                                    <Col md={12} className='mt-3'>
                                         <h3 className='heading4'>Target Users</h3>
-                                    </Col>
-                                    <Col  md={12}>
+                                    {/* </Col>
+                                    <Col  md={12}> */}
                                         <p className="para2"> Travelers of any age, traveling with family or alone, anyone can use the app to track and find his/her luggage at the airport.</p>
                                     </Col>
                                 </Row>
@@ -275,10 +263,10 @@ const Geepack = () => {
 								<h3 className='heading4'>User Flow</h3>
 							</Col>
 							<Col  md={12}>
-						    	<p className="para2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						    	<p className="para2"> To analyze the needs of the users and make the product more user-friendly, I created the user flow to understand the flow of the tasks from end to end:</p>
 							</Col>
-                            <Col md={12} className="mt-2 d-flex justify-content-center" >
-							<Image src={six} alt={'Employee Management'} style={{width:"70%", height:"100%"}} fluid />
+                            <Col md={12} className="mt-2 d-flex justify-content-center mb-5" >
+							<Image className='mb-5' src={six} alt={'Employee Management'} style={{width:"70%", height:"100%"}} fluid />
 							</Col>
 					</Row>
 
@@ -287,7 +275,7 @@ const Geepack = () => {
 							<Col md={12}>
 								<h3 className='heading4'>Typography & Colors</h3>
 							</Col>
-                            <Col md={12} className="mt-2" >
+                            <Col md={12} className="mt-2 mb-5" >
 							<Image src={seven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
 					</Row>
@@ -300,14 +288,14 @@ const Geepack = () => {
 							<Col  md={12}>
 						    	<p className="para2"> After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
 							</Col>
-                            <Col md={12} className="mt-2 d-flex justify-content-center" >
+                            <Col md={12} className="mt-2 d-flex justify-content-center mb-5" >
 							<Image src={nine} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
 					</Row>
                  </Container>
 
                  <Row className='g-second-container pb-5' style={{width:"100%"}}>
-                    <Col className='d-flex justify-content-center' md={12} >
+                    {/* <Col className='d-flex justify-content-center' md={12} >
                     <Row className={`mt-5 text-center ${width > 1000 ? "w-25" : "w-75"}`}>
 							<Col md={12}>
 								<h3 className='heading4'>Tab Bar</h3>
@@ -315,8 +303,9 @@ const Geepack = () => {
                                 <p className='m-0'>1. Scan QR Code</p>
 								<p className="para2"> 2. Add a new trip</p>
 							</Col>
+                         
 					</Row>
-                    </Col>
+                    </Col> */}
                     <Col className='d-flex justify-content-center'>
                     <Row className="mt-5" style={{width:"70%"}}  >
                     <Image src={ten} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
@@ -324,10 +313,12 @@ const Geepack = () => {
                     </Col>
                  </Row>
 
+{/* scan baggage */}
                  <Container className="mt-5" style={{width:"70%"}}>
                  <Image src={eleven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 
+{/* add new trip */}
                  <Row className='g-second-container pb-5 mt-5' style={{width:"100%"}}>
                     <Col className='d-flex justify-content-center'>
                     <Row className="mt-5" style={{width:"70%"}}>
@@ -336,11 +327,13 @@ const Geepack = () => {
                     </Col>
                  </Row>
 
+{/* status update */}
 
                  <Container className="mt-5" style={{width:"70%"}}>
                  <Image src={thirteen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 
+{/* airport */}
                  <Row className='g-second-container pb-5 mt-5' style={{width:"100%"}}>
                     <Col className='d-flex justify-content-center'>
                     <Row className="mt-5" style={{width:"70%"}}>
@@ -349,13 +342,15 @@ const Geepack = () => {
                     </Col>
                  </Row>
 
+                 {/* splash */}
+
                  <Container className="mt-5" style={{width:"70%"}}>
                  <Image src={seventeen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Container>
 
 
 				{/* light mode */}
-				<Row className='pb-5 m-0 p-0' style={{width:"100%"}}>
+				<Row className=' m-0 p-0' style={{width:"100%"}}>
                     <Image src={fifteen} className="m-0 p-0" alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
                  </Row>
 				 {/* dark mode */}
