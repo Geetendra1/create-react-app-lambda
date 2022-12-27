@@ -29,7 +29,7 @@
 
 		import twentyone from '../../../assets/png/image 8.png'
 		import twentytwo from '../../../assets/png/image 9.png'
-
+		import twentythree from '../../../assets/png/target to impact 1.png'
 
 
 
@@ -195,12 +195,13 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 
 
 					<Row className="mt-5" >
-							<Col md={12}>
+							<Col md={8}>
 								<h3 className="heading4" style={{color: textColor}}>The impact we aimed for our users</h3>
-							</Col>
-							<Col md={12} className="mt-2">
 							<p className='para2' style={{color: textColor}}>1. <span className='para1'>Time-saving:</span> Less interaction with the data saves time. The time saved can be used for something more productive and impactful. Business owners’ time is very valuable and in that same duration, impactful work leads to more value generation.</p>
 							<p className='para2 mb-5' style={{color: textColor}}>2. <span className='para1'>Business Growth:</span> Less reliable metric observability creates friction in business. Good tools will make irregularities more predictable which leads to better business planning and hence better business growth for users and cliff.ai as well.</p>
+							</Col>
+							<Col  md={4} className="mb-5 d-flex justify-content-end my-auto" sty>
+							<Image src={twentythree} alt={'Employee Management'} style={{width:"250px", height:"100%"}} fluid />
 							</Col>
 					</Row>
 
