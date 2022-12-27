@@ -64,7 +64,7 @@
 				</div>
 			
 			{/* overview section */}
-				<div className='mx-auto' style={{ width:"87%"}}>
+				<div className='mx-auto mt-5' style={{ width:"87%"}}>
 					<Row className="em-first-container" >
 								<Col lg={3} md={6} sm={12}className="text-lg-start text-md-start text-center" >
 									<Row className=''>
@@ -142,6 +142,7 @@
 					<Row className="mt-5" >
 							<Col md={12}>
 								<h3 className="heading4" style={{color: textColor}} >Use case</h3>
+								<p className='para2' style={{color: textColor}}>Aayush runs an e-commerce platform. To monitor his business, he uses a reliable platform called cliff.ai to track all the metrics.</p>
 								<p className='para2' style={{color: textColor}}>It’s a festive season and the website sees enormous traffic suddenly. He now wants to be notified when the website records traffic of more than 65K visitors so that he can alert his technology team to prepare for upscaling. 
 In order to do so, he sets up a stream, inputs threshold value, and just waits for the traffic notification to pop. Not only does his website traffic surpass 65K threshold mark, but also, he does not receive any notification from cliff when the incident happened. He got frustrated.</p>
 								<p className='para2' style={{color: textColor}}>Thankfully, he raised a complaint to our customer satisfaction team regarding the same issue which got us thinking.</p>
@@ -198,8 +199,8 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 								<h3 className="heading4" style={{color: textColor}}>The impact we aimed for our users</h3>
 							</Col>
 							<Col md={12} className="mt-2">
-							<p className='para2' style={{color: textColor}}>1. <strong>Time-saving:</strong> Less interaction with the data saves time. The time saved can be used for something more productive and impactful. Business owners’ time is very valuable and in that same duration, impactful work leads to more value generation.</p>
-							<p className='para2 mb-5' style={{color: textColor}}>2. <strong>Business Growth:</strong> Less reliable metric observability creates friction in business. Good tools will make irregularities more predictable which leads to better business planning and hence better business growth for users and cliff.ai as well.</p>
+							<p className='para2' style={{color: textColor}}>1. <span className='para1'>Time-saving:</span> Less interaction with the data saves time. The time saved can be used for something more productive and impactful. Business owners’ time is very valuable and in that same duration, impactful work leads to more value generation.</p>
+							<p className='para2 mb-5' style={{color: textColor}}>2. <span className='para1'>Business Growth:</span> Less reliable metric observability creates friction in business. Good tools will make irregularities more predictable which leads to better business planning and hence better business growth for users and cliff.ai as well.</p>
 							</Col>
 					</Row>
 
@@ -211,7 +212,7 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 							</Col>
 							<Col md={12} className="mt-2">
 							<p className='para2' style={{color: textColor}}>We started brainstorming about the feasibility of the features. We addressed basic whats, whys, and hows about the overall incident lifecycle.</p>
-							<p className='para2' style={{color: textColor}}>While brainstorming, we had to decide the exact design lifecycle aka, the process. We didn’t want to waste our time by randomly incorporating non-impactful design steps just for the sake of following the generic UX design procedure. We decided to Sprint through each part of the user flow one by one. We started with detailed pages of each feature and then designed the insight pages (or list pages) and followed the same reversed order for all the features. So in each sprint, we began with information architecture followed by low-fidelity wireframes. After creating a satisfactory number of iterations, we jumped to high-fidelity screens and worked on them in a similar iterative fashion.</p>
+							<p className='para2 mb-5' style={{color: textColor}}>While brainstorming, we had to decide the exact design lifecycle aka, the process. We didn’t want to waste our time by randomly incorporating non-impactful design steps just for the sake of following the generic UX design procedure. We decided to Sprint through each part of the user flow one by one. We started with detailed pages of each feature and then designed the insight pages (or list pages) and followed the same reversed order for all the features. So in each sprint, we began with information architecture followed by low-fidelity wireframes. After creating a satisfactory number of iterations, we jumped to high-fidelity screens and worked on them in a similar iterative fashion.</p>
 							</Col>
 					</Row>
 
@@ -252,7 +253,7 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 
 
 					<Row className="mt-5" >
-							<Col md={12} className="mt-5">
+							<Col md={12} className="">
 								<h3 className="heading4" style={{color: textColor}}>Monitors</h3>
 								<p className='para2'>Here, users will be able to select the rule, add a stream, multiple measures, and dimensions by setting upper and lower thresholds for related metrics.</p>
 							</Col>
@@ -310,14 +311,13 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 								<p className='para2 ' style={{color: textColor}}>5.  Comment section where team members can share their thoughts on that incident.</p>
 							</Col>
 
-							<Col md={12} className="mt-5 mb-5">
+							<Col md={12} className="mt-5">
 								<Image src={nineteen} alt={'Employee Management'} style={{width:"80%", height:"100%"}} fluid />
 							</Col>
 
 							<Col md={12} className="mt-5">
 								<p className='para2 mb-0' style={{color: textColor}}>The Heatmap is to show when and how many similar incidents happened in the past which has been already resolved:</p>
 							</Col>
-
 							<Col md={12} className="mt-5">
 								<Image src={twenty} alt={'Employee Management'} style={{width:"80%", height:"100%"}} fluid />
 							</Col>
@@ -361,10 +361,10 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 							</Col>
 							<Col md={12} className="mt-2">
 
-								<p className='para2' style={{color: textColor}}>1. <strong>Planning the roadmap:</strong>Pulling off the design journey efficiently was a big challenge especially because this was a huge project I was given ownership for. I ensured that every individual entity including project managers, stakeholders, interns, and engineers were looped into each design decision that I intended to make.</p>
-								<p className='para2' style={{color: textColor}}>2.  <strong>Mentoring:</strong>Getting the juniors onboard in every design decision to maximize their participation and learning was one of my priority goals while working on this project. It polished my leadership skills.</p>
-								<p className='para2' style={{color: textColor}}>3.  <strong>Giving feedback:</strong> Taking feedback is easier than giving feedback on someone else’s designs. It helped me improve in a way that I could give feedback without overwhelming their thought process.</p>
-								<p className='para2' style={{color: textColor}}>4.  <strong>Audits:</strong> The way we iterate while designing, the same way the developers should iterate after audits as nothing can be built perfectly in one go.</p>
+								<p className='para2' style={{color: textColor}}>1. <span className='para1'>Planning the roadmap: </span>Pulling off the design journey efficiently was a big challenge especially because this was a huge project I was given ownership for. I ensured that every individual entity including project managers, stakeholders, interns, and engineers were looped into each design decision that I intended to make.</p>
+								<p className='para2' style={{color: textColor}}>2.  <span className='para1'>Mentoring: </span>Getting the juniors onboard in every design decision to maximize their participation and learning was one of my priority goals while working on this project. It polished my leadership skills.</p>
+								<p className='para2' style={{color: textColor}}>3.  <span className='para1'>Giving feedback: </span> Taking feedback is easier than giving feedback on someone else’s designs. It helped me improve in a way that I could give feedback without overwhelming their thought process.</p>
+								<p className='para2' style={{color: textColor}}>4.  <span className='para1'>Audits: </span> The way we iterate while designing, the same way the developers should iterate after audits as nothing can be built perfectly in one go.</p>
 							</Col>
 
 					</Row>
