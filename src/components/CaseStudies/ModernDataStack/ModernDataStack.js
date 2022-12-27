@@ -34,7 +34,6 @@ import resources from '../../../assets/png/categories (1).png'
 import community from '../../../assets/png/companies (1).png' 
 import morescreen from '../../../assets/png/13.png' 
 import twenty from '../../../assets/png/14 (1).png' 
-import twentyone from '../../../assets/png/more screens 1.png' 
 
 import './ModernDataStack.css'
 
