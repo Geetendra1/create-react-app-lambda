@@ -1,4 +1,4 @@
-import React, {useLayoutEffect,useState} from 'react';
+import React from 'react';
 import one from '../../../assets/png/GEPACK hero.svg'
 import three from '../../../assets/svg/about/cubes 9 2.svg'
 import five from '../../../assets/svg/about/Rectangle 3.svg'
@@ -30,21 +30,21 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-      function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
-      }
-      window.addEventListener("resize", updateSize);
-      updateSize();
-      return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
-  }
+// function useWindowSize() {
+//     const [size, setSize] = useState([0, 0]);
+//     useLayoutEffect(() => {
+//       function updateSize() {
+//         setSize([window.innerWidth, window.innerHeight]);
+//       }
+//       window.addEventListener("resize", updateSize);
+//       updateSize();
+//       return () => window.removeEventListener("resize", updateSize);
+//     }, []);
+//     return size;
+//   }
 
 const Geepack = () => {
-    const [width] = useWindowSize();
+    // const [width] = useWindowSize();
 
     return (
         <>

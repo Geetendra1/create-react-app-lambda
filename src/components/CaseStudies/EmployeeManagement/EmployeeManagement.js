@@ -1,4 +1,4 @@
-		import React, {useLayoutEffect,useState} from 'react';
+		import React from 'react';
 		import './EmployeeManagement.css'
 		import one from '../../../assets/png/IMS hero.png'
 		import first from '../../../assets/png/old user flow.png'
@@ -39,21 +39,21 @@
 		import Col from 'react-bootstrap/Col';
 
 
-		function useWindowSize() {
-			const [size, setSize] = useState([0, 0]);
-			useLayoutEffect(() => {
-			  function updateSize() {
-				setSize([window.innerWidth, window.innerHeight]);
-			  }
-			  window.addEventListener("resize", updateSize);
-			  updateSize();
-			  return () => window.removeEventListener("resize", updateSize);
-			}, []);
-			return size;
-		  }
+		// function useWindowSize() {
+		// 	const [size, setSize] = useState([0, 0]);
+		// 	useLayoutEffect(() => {
+		// 	  function updateSize() {
+		// 		setSize([window.innerWidth, window.innerHeight]);
+		// 	  }
+		// 	  window.addEventListener("resize", updateSize);
+		// 	  updateSize();
+		// 	  return () => window.removeEventListener("resize", updateSize);
+		// 	}, []);
+		// 	return size;
+		//   }
 		
 		const EmployeeManagement = (props) => {
-			const [width] = useWindowSize();
+			// const [width] = useWindowSize();
 			const themes = props.themes
 				console.log('EmployeeManagement', themes);
 				const textColor  =  themes.tertiary
