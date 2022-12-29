@@ -105,7 +105,7 @@ const Geepack = () => {
 				</div>
 
                 {/* rest of the case study */}
-				<Container className="mt-5" style={{ width:  width > '1000px' ?  "70%" : '90%'}}>
+				<Container className="mt-5" style={{ width:  '70%'}}>
 				<Row className="mt-5">
 							<Col md={12}>
 								<h3 className='heading4'>What is GEPACK?</h3>

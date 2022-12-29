@@ -197,7 +197,7 @@ const ModernDataStack = () => {
                                     <Col>
                                     <h3 lassName='heading4'>The Landing Page</h3>
                                     <p className='para2'>We wanted to keep our landing page dynamic. So, we defined the top rated content in every section to keep it interesting and engaging for our new as well as existing users. Along with that, we keep updating the upcoming events on the home page. Apart from that, we also have a newsletter subscription option at the bottom of the page for the users to get updates about the latest events, offers and promotions from our website. View the website 
-                                    <a href="https://www.moderndatastack.xyz/" target="_blank" rel="noreferrer" style={{textDecoration:'none', color:'#f66640'}}>here</a>
+                                    <a href="https://www.moderndatastack.xyz/" target="_blank" rel="noreferrer" style={{textDecoration:'none', color:'#f66640'}}> here</a>
                                     </p>
                                     </Col>  
                                 </Row>
