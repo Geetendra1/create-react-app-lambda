@@ -12,9 +12,8 @@
 .navbar--container-p {
 font-family: 'Merriweather';
 font-style: normal;
-/* font-weight: ; */
-font-size: 40px;
-/* line-height: 72px; */
+font-weight: 400;
+font-size: 32px;
 }
 
 .navbar--container {

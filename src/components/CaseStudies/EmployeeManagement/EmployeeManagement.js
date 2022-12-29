@@ -1,6 +1,6 @@
-		import React from 'react';
+		import React, {useLayoutEffect,useState} from 'react';
 		import './EmployeeManagement.css'
-		import one from '../../../assets/png/IMS hero (1).svg'
+		import one from '../../../assets/png/IMS hero.png'
 		import first from '../../../assets/png/old user flow.png'
 		import second from '../../../assets/png/new user flow.png'
 		// import third from '../../../assets/svg/about/Monitor - List 3 2.svg'
@@ -39,21 +39,21 @@
 		import Col from 'react-bootstrap/Col';
 
 
-		// function useWindowSize() {
-		// 	const [size, setSize] = useState([0, 0]);
-		// 	useLayoutEffect(() => {
-		// 	  function updateSize() {
-		// 		setSize([window.innerWidth, window.innerHeight]);
-		// 	  }
-		// 	  window.addEventListener("resize", updateSize);
-		// 	  updateSize();
-		// 	  return () => window.removeEventListener("resize", updateSize);
-		// 	}, []);
-		// 	return size;
-		//   }
+		function useWindowSize() {
+			const [size, setSize] = useState([0, 0]);
+			useLayoutEffect(() => {
+			  function updateSize() {
+				setSize([window.innerWidth, window.innerHeight]);
+			  }
+			  window.addEventListener("resize", updateSize);
+			  updateSize();
+			  return () => window.removeEventListener("resize", updateSize);
+			}, []);
+			return size;
+		  }
 		
 		const EmployeeManagement = (props) => {
-			// const [width] = useWindowSize();
+			const [width] = useWindowSize();
 			const themes = props.themes
 				console.log('EmployeeManagement', themes);
 				const textColor  =  themes.tertiary
@@ -116,7 +116,7 @@
 				</div>
 
 				{/* rest of the case study */}
-				<Container className='mt-5' style={{ width:"70%"}}>
+				<Container className='mt-5' style={{ width:  width > '1000px' ?  "70%" : '90%'}}>
 					<Row className="">
 						<Col md={12} lg={4}>
 							<Image src={twelveth} style={{width:'300px'}} />

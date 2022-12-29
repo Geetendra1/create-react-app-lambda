@@ -55,8 +55,8 @@ function SimilarCaseStudies(props) {
                             slug={work.slug}
                                         id={work.id}
                                         projectName={work.projectName}
-                                        projectDesc={work.projectDesc.slice(0,50)}
-                                        projectShortDesc={work.projectShortDesc.slice(0,100)}
+                                        projectDesc={work.projectDesc}
+                                        projectShortDesc={work.projectShortDesc}
                                         image={work.image}/>
                             </Col>
                         ))}

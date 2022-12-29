@@ -7,6 +7,7 @@ import { withRouter } from 'react-router-dom';
 import EmployeeManagement from '../../components/CaseStudies/EmployeeManagement/EmployeeManagement';
 import Geepack from '../../components/CaseStudies/Geepack/Geepack';
 import ModernDataStack from '../../components/CaseStudies/ModernDataStack/ModernDataStack';
+import Imenco from '../../components/CaseStudies/Imenco/Imenco';
 import CaseStudyNav from '../../components/Navbar/CaseStudyNav'
 import {SimilarCaseStudies}  from '../../components';
 import { selectedWork } from '../../data/selectedWork';
@@ -47,6 +48,9 @@ const CaseStudyPage = ({history}) => {
     )}
     {lastSegment === 'moderndatastack' && (
       <ModernDataStack />
+    )}
+    {lastSegment === 'imenco' && (
+      <Imenco themes={themes}/>
     )}
     <SimilarCaseStudies  data={data}/>
     </>

@@ -32,7 +32,7 @@ import journal from '../../../assets/png/categories (2).png'
 import podcast from '../../../assets/png/companies (2).png' 
 import resources from '../../../assets/png/categories (1).png' 
 import community from '../../../assets/png/companies (1).png' 
-import morescreen from '../../../assets/png/13.png' 
+import morescreen from '../../../assets/png/15 (1).png' 
 import twenty from '../../../assets/png/14 (1).png' 
 
 import './ModernDataStack.css'
@@ -196,7 +196,7 @@ const ModernDataStack = () => {
                                 <Row>
                                     <Col>
                                     <h3 lassName='heading4'>The Landing Page</h3>
-                                    <p className='para2'>We wanted to keep our landing page dynamic. So, we defined the top rated content in every section to keep it interesting and engaging for our new as well as existing users. Along with that, we keep updating the upcoming events on the home page. Apart from that, we also have a newsletter subscription option at the bottom of the page for the users to get updates about the latest events, offers and promotions from our website. View the website here.</p>
+                                    <p className='para2'>We wanted to keep our landing page dynamic. So, we defined the top rated content in every section to keep it interesting and engaging for our new as well as existing users. Along with that, we keep updating the upcoming events on the home page. Apart from that, we also have a newsletter subscription option at the bottom of the page for the users to get updates about the latest events, offers and promotions from our website. View the website <a href="https://www.moderndatastack.xyz/" target="_blank" style={{textDecoration:'none', color:'#f66640'}}>here</a></p>
                                     </Col>  
                                 </Row>
 							</Col>
@@ -348,10 +348,9 @@ const ModernDataStack = () => {
             </Row>
                 </div>
         
-        <Container className='mt-5' style={{ width:"70%"}}>
+        <Container className='mt-5' style={{ width:"100%"}}>
             <Row className='mt-5'>
             <Image className='' src={twenty} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
-
             </Row>
         </Container>
                     

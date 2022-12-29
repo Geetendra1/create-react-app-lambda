@@ -10,9 +10,9 @@ import {
   import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
-import one from '../../assets/png/Rectangle 4560 (2).png'
+import one from '../../assets/png/doodle.png'
 
-import two from '../../assets/png/Rectangle 4559 (2).png'
+import two from '../../assets/png/saloni.png'
 
 import three from '../../assets/png/Rectangle 4559 (1).png'
 
@@ -80,10 +80,10 @@ const About = () => {
             </Row>
             </Container>
         {/* </div> */}
-        <div className='about-interestes pb-5' style={{width:"100%", backgroundColor:themes.primary}}  >
-          <Container >
+        <div className='about-interestes pb-5' style={{ backgroundColor:themes.primary}}  >
+          <Container style={{width:"70%", height:"100%"}}>
             <Row className='d-flex justify-content-center'>
-                <Col md={9} className='d-flex justify-content-start mb-4'>
+                <Col md={12} className='d-flex justify-content-start mb-4    '>
                 <div className='mt-5'>
                 <h1 className='heading1' style={{color:'white'}} >My interests & hobbies</h1>
                 <p className='para2' style={{color:'white'}}>I love to explore new places and capture the beauty of the world around them. I believe and feel that these two activities can provide endless opportunities for adventure, creativity, and self-expression. Additionally, I love doing activities which allow me to express myself, that is, art and doodle.</p>
@@ -91,10 +91,10 @@ const About = () => {
                 </Col>
             </Row>
           </Container>
-          <Container>
+          <Container style={{width:"70%", height:"100%"}}>
             <Row className='d-flex justify-content-center'>
-                <Col md={9} className='d-flex justify-content-start mb-5'>
-                <div className=''>
+                <Col md={12} className='d-flex justify-content-start mb-5'>
+                <div className='w-100 p-1'>
                 {/* <p className='para2' style={{color:'white'}}>I love to explore new places and capture the beauty of the world around them. I believe and feel that these two activities can provide endless opportunities for adventure, creativity, and self-expression. Additionally, I love doing activities which allow me to express myself, that is, art and doodle.</p> */}
                 <h3 style={{color:'white'}} className='heading3'>I love to click  📸</h3>
                 <Row>

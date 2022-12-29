@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useLayoutEffect,useState} from 'react';
 import one from '../../../assets/png/GEPACK hero.svg'
 import three from '../../../assets/svg/about/cubes 9 2.svg'
 import five from '../../../assets/svg/about/Rectangle 3.svg'
@@ -30,9 +30,21 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
+function useWindowSize() {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener("resize", updateSize);
+      updateSize();
+      return () => window.removeEventListener("resize", updateSize);
+    }, []);
+    return size;
+  }
 
 const Geepack = () => {
+    const [width] = useWindowSize();
 
     return (
         <>
@@ -93,7 +105,7 @@ const Geepack = () => {
 				</div>
 
                 {/* rest of the case study */}
-				<Container className="mt-5" style={{width:"70%"}}>
+				<Container className="mt-5" style={{ width:  width > '1000px' ?  "70%" : '90%'}}>
 				<Row className="mt-5">
 							<Col md={12}>
 								<h3 className='heading4'>What is GEPACK?</h3>

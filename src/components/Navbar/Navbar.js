@@ -183,7 +183,7 @@ function Navbar({history}) {
         <div className='navbar-s' >
             <div className='navbar--container m-5'>
                 <a href="/" style={{textDecoration:'none'}}>
-                <p className='navbar--container-p ' style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  , fontFamily:'Inter' }}>
+                <p className='navbar--container-p disable-on-sm' style={{ color: themes.type === 'light' ? themes.secondary : themes.tertiary  , fontFamily:'Inter' }}>
                     {shortname(headerData.name)}
                 </p>
                 </a>
