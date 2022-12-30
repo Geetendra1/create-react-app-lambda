@@ -197,30 +197,31 @@ function Navbar({history}) {
                 />
                 
                 <div className={`${classes.navMenuOpen}`}>
-                <a href='/' style={{textDecoration:'none'}}> <div className={classes.navMenuOpenItems}>
+               
+                <div className={classes.navMenuOpenItems}>
                 {lastSegment === '' ? (
-                            <p style={{fontFamily:'Inter' , fontWeight:'500'}}>Home</p>
+                            <a href='/' style={{textDecoration:'none'}}>  <p style={{fontFamily:'Inter' , fontWeight:'500',color:'black'}}>Home</p></a>
                         ) : (
-                            <p style={{fontFamily:'Inter' , fontWeight:'300'}}>Home</p>
+                            <a href='/' style={{textDecoration:'none'}}> <p style={{fontFamily:'Inter' , fontWeight:'300',color:'black'}}>Home</p></a>
                         ) }
                 </div>
-                </a>                 
-                <a href={Pdf} without rel="noopener noreferrer" target="_blank" style={{textDecoration:'none'}}>
                         <div className={classes.navMenuOpenItems} >
                         {lastSegment === 'resume' ? (
-                            <p style={{fontFamily:'Inter' , fontWeight:'500'}}>Resume</p>
+                                         <a href={Pdf} without rel="noopener noreferrer" target="_blank" style={{textDecoration:'none'}}>
+                                         <p style={{fontFamily:'Inter' , fontWeight:'500',color:'black'}}>Resume</p> </a>
                         ) : (
-                            <p style={{fontFamily:'Inter' , fontWeight:'300'}}>Resume</p>
+                            <a href={Pdf} without rel="noopener noreferrer" target="_blank" style={{textDecoration:'none'}}>
+                            <p style={{fontFamily:'Inter' , fontWeight:'300',color:'black'}}>Resume</p></a>
                         ) }
                         </div>
-                        </a>
-                    <a href='/about' style={{textDecoration:'none'}} > <div className={classes.navMenuOpenItems}>
+                       
+                    <div className={classes.navMenuOpenItems}>
                         {lastSegment === 'about' ? (
-                            <p style={{fontFamily:'Inter' , fontWeight:'500'}}>About Me</p>
+                          <a href='/about' style={{textDecoration:'none'}} >  <p style={{fontFamily:'Inter' , fontWeight:'500' , color:'black'}}> About Me</p></a>
                         ) : (
-                            <p style={{fontFamily:'Inter' , fontWeight:'300'}}>About Me</p>
+                            <a href='/about' style={{textDecoration:'none'}} > <p style={{fontFamily:'Inter' , fontWeight:'300' , color:'black'}}>About Me</p></a>
                         ) }
-                        </div></a>
+                        </div>
 
                     {/* <img onClick={handleTheme} src={themes.themeLogo} alt="s" /> */}
                 </div>
