@@ -46,8 +46,8 @@ export const selectedWork = [
     },
     {
         id: 4,
-        slug:'geepack',
-        projectName: 'Geepack',
+        slug:'gepack',
+        projectName: 'Gepack',
         projectShortDesc: 'A UX/UI Design Case Study • Research • 2020 • Travel', 
         projectDesc: 'Assisting travelers by providing real-time updates on the status of their luggage, particularly if there is any mishandling or delay, and informing them of an estimated arrival time for their luggage.',
         tags: ['Django', 'Tailwind CSS'],

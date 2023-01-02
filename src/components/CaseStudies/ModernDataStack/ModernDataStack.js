@@ -119,7 +119,7 @@ const ModernDataStack = () => {
                     {/* problems */}
                     <Row className='mt-5'>
                     <h3 className='heading4'>Problems</h3>
-                    <p className='para2'>Being the only <span className='para1'>designer in the team,</span> my product manager gave me a statement to work on, that is, “I need a platform which has everything related to the modern data stack”. I started exploring to understand its meaning, purpose, and the problems that exist currently. The main problems I discovered were:</p>
+                    <p className='para2'>Being the <span className='para1'>only designer in the team,</span> my product manager gave me a statement to work on, that is, “I need a platform which has everything related to the modern data stack”. I started exploring to understand its meaning, purpose, and the problems that exist currently. The main problems I discovered were:</p>
                     <Row className='mt-2 mb-5' >
                         <Col md={12} sm={12} lg={6}>
                             <Row>

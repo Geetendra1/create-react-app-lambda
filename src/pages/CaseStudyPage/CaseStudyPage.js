@@ -43,7 +43,7 @@ const CaseStudyPage = ({history}) => {
     {lastSegment === 'incident-management-system' && (
       <EmployeeManagement themes={themes} />
     )}
-    {lastSegment === 'geepack' && (
+    {lastSegment === 'gepack' && (
       <Geepack />
     )}
     {lastSegment === 'moderndatastack' && (
