@@ -269,7 +269,7 @@ const ModernDataStack = () => {
     <Container className='mt-5' style={{ width:"70%"}}>
     <Row>
             <Col>
-                    <h3 lassName='heading4'>low-fidelity screens</h3>
+                    <h3 lassName='heading4'>Low-fidelity screens</h3>
                     <p className='para2'>I created wireframes to have a graphical representation of the visuals and prototype it to perform user testing which can help identify areas that need improvement and help to ensure the project meets the user's needs. It also helps developers design and plan the layout and functionality of the project.</p>
                 </Col>  
     </Row>
