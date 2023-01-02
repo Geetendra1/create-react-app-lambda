@@ -34,7 +34,8 @@ import resources from '../../../assets/png/categories (1).png'
 import community from '../../../assets/png/companies (1).png' 
 import morescreen from '../../../assets/png/15 (1).png' 
 import twenty from '../../../assets/png/14 (1).png' 
-
+import './ModernDataStack.css'
+import twentyOne from '../../../assets/png/wf screens.png' 
 import './ModernDataStack.css'
 
 
@@ -118,7 +119,7 @@ const ModernDataStack = () => {
                     {/* problems */}
                     <Row className='mt-5'>
                     <h3 className='heading4'>Problems</h3>
-                    <p className='para2'>Being the only designer in the team, my product manager gave me a statement to work on, that is, “I need a platform which has everything related to the modern data stack”. I started exploring to understand its meaning, purpose, and the problems that exist currently. The main problems I discovered were:</p>
+                    <p className='para2'>Being the only <span className='para1'>designer in the team,</span> my product manager gave me a statement to work on, that is, “I need a platform which has everything related to the modern data stack”. I started exploring to understand its meaning, purpose, and the problems that exist currently. The main problems I discovered were:</p>
                     <Row className='mt-2 mb-5' >
                         <Col md={12} sm={12} lg={6}>
                             <Row>
@@ -163,8 +164,8 @@ const ModernDataStack = () => {
                     {/* Solution */}
                     <Row className='mt-5'>
                     <h3 className='heading4'>Solutions</h3>
-                    <p className='para2'><span className='para1'>Together with my product manager,</span> we discussed the issues and the causes behind them, and we came to the conclusion that a website would be the best place to gather all the knowledge about modern data stacks.</p>
-                    <p className='para2 mb-5'>Thus, we created a website with <spann>the details of the companies, their data stacks and the tools they employ.</spann>  Additionally, we collected informative content on the modern data stack, including <span className='para1'>journals, podcasts, articles, and videos.</span> We also included the <span className='para1'>key influential people</span>  from this field, a <span className='para1'>discussion forum</span> for topics relating to the modern data stack, and a feature to<span className='para1'> compare companies</span> to analyze the usage of the stacks and tools.</p>
+                    <p className='para2'>Together<span className='para1'> with my product manager,</span> we discussed the issues and the causes behind them, and we came to the conclusion that a website would be the best place to gather all the knowledge about modern data stacks.</p>
+                    <p className='para2 mb-5'>Thus, we created a website with <spann>the details of the companies, their <span className='para1'>data stacks and the tools</span> they employ.</spann>  Additionally, we collected informative content on the modern data stack, including <span className='para1'>journals, podcasts, articles, and videos.</span> We also included the key<span className='para1'> influential people</span>  from this field, a <span className='para1'>discussion forum</span> for topics relating to the modern data stack, and a feature to<span className='para1'> compare companies</span> to analyze the usage of the stacks and tools.</p>
                     </Row>
 
                     {/* effect approch */}
@@ -197,7 +198,7 @@ const ModernDataStack = () => {
                                     <Col>
                                     <h3 lassName='heading4'>The Landing Page</h3>
                                     <p className='para2'>We wanted to keep our landing page dynamic. So, we defined the top rated content in every section to keep it interesting and engaging for our new as well as existing users. Along with that, we keep updating the upcoming events on the home page. Apart from that, we also have a newsletter subscription option at the bottom of the page for the users to get updates about the latest events, offers and promotions from our website. View the website 
-                                    <a href="https://www.moderndatastack.xyz/" target="_blank" rel="noreferrer" style={{textDecoration:'none', color:'#f66640'}}> here</a>
+                                    <a href="https://www.moderndatastack.xyz/" target="_blank" rel="noreferrer" style={{textDecoration:'none', color:'#f66640'}}> here</a>.
                                     </p>
                                     </Col>  
                                 </Row>
@@ -229,7 +230,8 @@ const ModernDataStack = () => {
                                 <Row>
                                     <Col>
                                     <h3 className='heading4'>Use Cases</h3>
-                                    <p className='mt-3 para2' >For designing a brand new platform, I explored all the possible use cases. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <p className='mt-3 para2' >
+                                    For designing a brand new platform, I explored all the possible use cases and then identified the core requirements for the platform. In conversation with our clients, we recognized the following use cases:                                        </p>
                                     </Col>  
                                     <Col lg={12} md={12}>
                                     <Image src={fifteen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
@@ -257,11 +259,25 @@ const ModernDataStack = () => {
                                     </Col>  
                                 </Row>
 							</Col>
-							<Col md={12} className='mt-4'>
-                             <Image src={eleven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
+							<Col md={12} className='mt-4 mb-5'>
+                             <Image className='mb-5' src={eleven} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
 							</Col>
 					</Row>
                 </Container>
+
+<div>
+    <Container className='mt-5' style={{ width:"70%"}}>
+    <Row>
+            <Col>
+                    <h3 lassName='heading4'>low-fidelity screens</h3>
+                    <p className='para2'>I created wireframes to have a graphical representation of the visuals and prototype it to perform user testing which can help identify areas that need improvement and help to ensure the project meets the user's needs. It also helps developers design and plan the layout and functionality of the project.</p>
+                </Col>  
+    </Row>
+    </Container>
+            <Row className=''>
+            <Image className='mb-5' src={twentyOne} alt={'Employee Management'} style={{width:"100%", height:"100%"}} />
+            </Row>
+</div>
 
                 <Container className='mt-5' style={{ width:"70%"}}>
                      {/* Typography */}
@@ -342,13 +358,11 @@ const ModernDataStack = () => {
 					</Row>
                 </Container>
 
-                <div className=''>
-
-
+        <div className=''>
             <Row className='mt-5'>
             <Image className='mb-5' src={morescreen} alt={'Employee Management'} style={{width:"100%", height:"100%"}} />
             </Row>
-                </div>
+</div>
         
         <Container className='mt-5' style={{ width:"100%"}}>
             <Row className='mt-5'>
