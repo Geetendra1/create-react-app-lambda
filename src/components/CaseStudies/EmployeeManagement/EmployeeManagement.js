@@ -228,7 +228,7 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 							<p className='para2' style={{color: textColor}}>1. <span className='para1'>Nomenclature:</span> The naming convention is very important when it comes to accessibility. Users should know what the feature is for or what the given action does just by reading the name. Although our naming convention was easily understood by our team, we realized it could be improved for better and made them user-friendly. </p>
 							<p className='para2' style={{color: textColor}}>2.  <span className='para1'>Hierarchy:</span>  We improved the overall hierarchy of our system.</p>
 
-							<p className='para2' style={{color: textColor}}>2.  <span className='para1'>Hierarchy:</span>  After brainstorming the feasibility of all the features, we started structuring all the information we had. Our new user flow had these key steps.</p>
+							<p className='para2' style={{color: textColor}}> After brainstorming the feasibility of all the features, we started structuring all the information we had. Our new user flow had these key steps.</p>
 
 							</Col>
 
@@ -246,7 +246,7 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 							</Col>
 							<Col md={12} className="mt-2">
 							<p className='para2' style={{color: textColor}}>An incident is an event or series of events that are generated when there is any disturbance in service due to numerous reasons. At cliff.ai, after the creation of a Stream, when a bunch of related anomalies is found, we group them to create an Incident.</p>
-							<p className='para2' style={{color: textColor}}>Considering the outcomes of competitive analysis, we worked on the user flow and transformed the navigation of the alert system and we realized the importance of segregating to multiple sections and thus decided to divide our existing alert system into three parts: Monitors, Incidents & Escalation Policies.</p>
+							<p className='para2' style={{color: textColor}}>Considering the outcomes of competitive analysis, we worked on the user flow and transformed the navigation of the alert system and we realized the importance of segregating to multiple sections and thus decided to divide our existing alert system into three parts: <span className='para1'>Monitors, Incidents & Escalation Policies</span>.</p>
 
 							<p className='para2 mb-5' style={{color: textColor}}>Let’s go deeper and see all three parts in detail. </p>
 							</Col>
@@ -335,9 +335,7 @@ In order to do so, he sets up a stream, inputs threshold value, and just waits f
 							    <Image src={twentyone} alt={'Employee Management'} style={{width:"80%", height:"100%"}} fluid />
 							</Col>
 							<Col md={12} className="mt-5">
-								<p className='para2' style={{color: textColor}}>Now comes the fun part, as soon as an Incident is generated, the notifications will be pushed to the respected assigned responders based on the Default Escalation Policy, AUTOMATICALLY!</p>
-
-								<p className='para2' style={{color: textColor}}>i.e., Users do not need to set up anything for the feature to work properly. Our Base Escalation Policy will take care of it for them. Hence one problem is solved.</p>
+								<p className='para2' style={{color: textColor}}>Now comes the fun part, as soon as an Incident is generated, the notifications will be pushed to the respected assigned responders based on the Default Escalation Policy, AUTOMATICALLY,i.e., Users do not need to set up anything for the feature to work properly. Our Base Escalation Policy will take care of it for them. Hence one problem is solved.</p>
 								<p className='para2' style={{color: textColor}}>However, we had to address the problem of whom and when to escalate the notification. This is where Escalation Policy comes into the picture. By adding any number of users or teams and setting favorable rules so that in case of occurrence of an Incident, the assigned responders would be notified based on those preset rules.</p>
 								<p className='para2' style={{color: textColor}}>An escalation policy describes the following three things:</p>
 								<p className='para2 mb-0' style={{color: textColor}}>1.  Who to deliver the notifications to.</p>

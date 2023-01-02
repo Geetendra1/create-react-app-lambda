@@ -5,7 +5,9 @@ import five from '../../../assets/svg/about/Rectangle 3.svg'
 import six from '../../../assets/svg/about/flow.svg'
 import seven from '../../../assets/png/font & colors.png'
 import nine from '../../../assets/png/1. home.png'
+
 import ten from '../../../assets/png/tab bar.png'
+
 import eleven from '../../../assets/png/3. scan qr.png'
 import twelve from '../../../assets/png/add new trip.png'
 import thirteen from '../../../assets/png/5. status update.png'
@@ -61,7 +63,7 @@ const Geepack = () => {
 												<h3 className="heading4">Goal</h3>
 											</Col>
 											<Col md={12} className="text-start para2">
-												<small>To improve the user experience by redefining and analyzing the loopholes of the product. For this, I collaborated with Engineering and deveopment teams.</small>
+												<small>To increase the effectiveness and accuracy of the baggage handling process by giving  users accurate real-time information about their baggages.</small>
 											</Col>
 									</Row>
 								</Col>
@@ -72,8 +74,8 @@ const Geepack = () => {
 										</Col>
 										<Col md={12} className="text-start">
 										<ul className='para2'>
-											<li><small>1st version: 8 weeks</small></li>
-											<li><small>2nd version: 2 weeks</small></li>
+											<li><small>1st version: 5 weeks</small></li>
+											{/* <li><small>2nd version: 2 weeks</small></li> */}
 										</ul> 
 										</Col>
 								</Row>
@@ -85,8 +87,8 @@ const Geepack = () => {
 										</Col>
 										<Col md={12} className="text-start">
 										<ul className='para2'>
-											<li><small>Research & UX Design: Competitive analysis, user flow, information architecture, wireframing</small></li>
-											<li><small>UI Design: Visuals</small></li>
+											<li><small>Research & UX Design: Interview, Survey, Observation, user flow, IA, wireframing, user-testing</small></li>
+											<li><small>UI Design: Visuals, user-testing</small></li>
 										</ul> 
 										</Col>
 								</Row>
@@ -97,7 +99,7 @@ const Geepack = () => {
 											<h3 className="heading4">Skills</h3>
 										</Col>
 										<Col md={12} className="text-start para2">
-											<small>Competitive analysis, user flow, information architecture, wireframing, user testing, interaction design, user interface</small>
+											<small>Qualitative & quantitative analysis, user flow, IA, wireframing, user testing, interaction design, user interface, Figma, Illustrator.</small>
 										</Col>
 								</Row>
 							</Col>
@@ -205,7 +207,7 @@ const Geepack = () => {
 								<h3 className='heading4'>Proposed Solutions</h3>
 							</Col>
 							<Col  md={12}>
-							<p className="para2"> To validate the pain points and user cases, I interviewed few of my friends and relatives asking them about their travel experiences and to know about their pain points. Based on this I concluded that these problems do exist and proposed following solutions:</p>
+							<p className="para2"> To validate the pain points and use cases, I interviewed few of my friends and relatives asking them about their travel experiences and to know about their pain points. Based on this I concluded that these problems do exist and proposed following solutions:</p>
 							</Col>
                             <Col md={12} className="mt-2">
 							<Row className='mt-2 mb-5' >
@@ -298,7 +300,7 @@ const Geepack = () => {
 								<h3 className='heading4'>Visuals</h3>
 							</Col>
 							<Col  md={12}>
-						    	<p className="para2"> After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
+						    	<p className="para2"> From the research, user flow and information architecture, I created the high-fidelity screens to provide the user with an intuitive and engaging experience.</p>
 							</Col>
                             <Col md={12} className="mt-2 d-flex justify-content-center mb-5" >
 							<Image src={nine} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
@@ -307,17 +309,6 @@ const Geepack = () => {
                  </Container>
 
                  <Row className='g-second-container pb-5' style={{width:"100%"}}>
-                    {/* <Col className='d-flex justify-content-center' md={12} >
-                    <Row className={`mt-5 text-center ${width > 1000 ? "w-25" : "w-75"}`}>
-							<Col md={12}>
-								<h3 className='heading4'>Tab Bar</h3>
-                                <p className="para2"> After the research and wireframing, I moved further into the visual design and created 50+ screens.</p>
-                                <p className='m-0'>1. Scan QR Code</p>
-								<p className="para2"> 2. Add a new trip</p>
-							</Col>
-                         
-					</Row>
-                    </Col> */}
                     <Col className='d-flex justify-content-center'>
                     <Row className="mt-5" style={{width:"70%"}}  >
                     <Image src={ten} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
