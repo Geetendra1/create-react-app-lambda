@@ -10,7 +10,7 @@ export const selectedWork = [
     {
         id: 1,
         slug:'moderndatastack',
-        projectName: 'MDS',
+        projectName: 'The Modern data stack',
         projectShortDesc: 'A product design Case Study •  Research • 2021 • Technology', 
         projectDesc: 'Providing people with a set of valuable and reliable resources to help them learn best practices about data stacks, and choose stacks for their own use cases.',
         tags: ['React', 'CSS', 'Material Ui'],
@@ -23,7 +23,7 @@ export const selectedWork = [
     {
         id: 2,
         slug:'incident-management-system',
-        projectName: 'IMS',
+        projectName: 'Incident Management system',
         projectShortDesc: 'A product design Case Study • Redesigning • Research • 2021 • SaaS', 
         projectDesc: 'Redesigning the old alert system to improve the users’ experiences, make it more user-friendly and accessible by updating the alert system, one of the most important feature of the platform.',
         tags: ['Django', 'CSS', 'Material Ui'],
@@ -35,7 +35,7 @@ export const selectedWork = [
     {
         id: 3,
         slug:'imenco',
-        projectName: 'IMENCO',
+        projectName: 'IMENCO - Impactful Energy Consumption',
         projectShortDesc: 'A UX/UI Design Case Study • Research • 2022 • Sustainability', 
         projectDesc: 'Encouraging and assisting individuals live a more sustainable life by consuming energy more mindfully, saving money on their electricity bill, and lowering their carbon footprint.',
         tags: ['Django', 'Tailwind CSS'],
@@ -47,7 +47,7 @@ export const selectedWork = [
     {
         id: 4,
         slug:'gepack',
-        projectName: 'Gepack',
+        projectName: 'GEPACK',
         projectShortDesc: 'A UX/UI Design Case Study • Research • 2020 • Travel', 
         projectDesc: 'Assisting travelers by providing real-time updates on the status of their luggage, particularly if there is any mishandling or delay, and informing them of an estimated arrival time for their luggage.',
         tags: ['Django', 'Tailwind CSS'],

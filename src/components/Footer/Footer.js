@@ -45,7 +45,8 @@ function Footer() {
             </p>
 
             <div className='mt-3' style={{color: textColor, display:'flex'}}> <small  className="para2 adjust-para2-font-size disable-on-sm">Reach out to me : </small> <p style={{marginLeft:'10px'}} className="para1 adjust-para2-font-size" >swati.pal2804@gmail.com</p></div>
-            <div className='mt-2' style={{color: textColor, display:'flex'}}> <small  className="para2 adjust-para2-font-size disable-on-sm">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="para1 adjust-para2-font-size">Book a session with me on <u>ADPList</u></p></div>
+            <div className='mt-2' style={{color: textColor, display:'flex'}}> <small  className="para2 adjust-para2-font-size disable-on-sm">ADPList Mentorship : </small> <p style={{marginLeft:'10px'}} className="para1 adjust-para2-font-size">Book a session with me on <a href="https://adplist.org/mentors/swati-pal" style={{textDecoration:'none', color: textColor, }} target="_blank"                                 rel='noreferrer'
+><u>ADPList</u></a></p></div>
             <div className='mt-2'> <small style={{color: textColor}} className="para2 adjust-para2-font-size disable-on-sm">Find me on : </small>
             {socialsData.medium && (
                             <a
