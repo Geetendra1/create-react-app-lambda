@@ -4,7 +4,7 @@ import Image from 'react-bootstrap/Image'
 import two from '../../../assets/png/IMENCO hero.png'
 import three from '../../../assets/png/content.png'
 import four from '../../../assets/png/bulbs.png'
-import five from '../../../assets/png/process.png'
+import five from '../../../assets/png/process 1.png'
 import six from '../../../assets/png/Survey results.png'
 import seven from '../../../assets/png/survey insights.png'
 import eight from '../../../assets/png/illustration.png'
@@ -124,13 +124,13 @@ const Imenco = (props) => {
 							<Col md={12}>
                 <Row>
                   <Col md={8}>
-                      <h3 className='heading4'>What is IMENCO?</h3>
+                      <h3 className='heading4'>Solutions</h3>
                       <p className="para2 mb-0">It takes a lot of thinking and research to make a sustainable and energy-efficient lifestyle and it is even more difficult to make it affordable. We need to cut down on the amount of energy we waste, and the amount of carbon dioxide that we release into the atmosphere. In light of these considerations, we developed a mobile application called IMENCO, which stands for "Impactful Energy Consumption".</p>
                       <p className='para2'>With the help of IMENCO, its users may cut down on energy use and waste, therefore reducing the harmful impact on the environment. The way this can be accomplished is by providing users with the means to monitor and schedule individual appliance usage. This will enable them to place limits on their energy intake and to learn how to reduce their electricity bill through sustainable energy consumption.</p>
                   </Col>
 
                   <Col md={4} className='d-flex justify-content-end'>
-                  <Image src={four} alt={'Employee Management'} style={{width:"80%", height:"90%"}} fluid />
+                  <Image className='my-auto' src={four} alt={'Employee Management'} style={{width:"80%", height:"80%"}} fluid />
                   </Col>
                 </Row>
 							</Col>
@@ -165,8 +165,8 @@ const Imenco = (props) => {
                 <p className="para2">The process we followed was to first identify and validate the problem we were trying to solve. This included understanding the context of the problem, researching and gathering data through observation, survey and interviews, and thus, developing a hypothesis. We then worked on describing, ideating and designing a solution which included understanding the customer or user, creating high-fidelity screens, prototype, and testing the prototype.</p>
 							</Col>
 							
-							<Col md={12} className='mb-5'>
-              <Image src={five} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid />
+			<Col md={12} className='mb-5' >
+              <Image src={five} alt={'Employee Management'} style={{width:"100%", height:"100%"}} fluid  />
               </Col>
 					</Row>
 
@@ -194,14 +194,14 @@ const Imenco = (props) => {
 				<Row className='mt-5'>
 					<Col md={9} >
 					<p className="para2"><span className='para1'> <span>&#8226;</span> Interview : </span>To collect detailed, in-depth data to validate the problems, we interviewed individuals who are directly affected by the given problem. As a result, by obtaining users’ perspectives and gaining insights, we got a more comprehensive understanding of the problem, which enabled us to develop a more effective solution that addresses the issues we identified and meets the needs of our users.</p>
-					<p className="para2">The following are the main takeaways from the interviews and observations:</p>
+					<p className="para2 mt-5">The following are the main takeaways from the interviews and observations:</p>
 
 					</Col>
 					<Col md={3} className='d-flex justify-content-end'>
 					<Image src={eight} alt={'Employee Management'} style={{width:"80%", height:"100%"}} />
 					</Col>
 
-					<Col className='12'>
+					<Col className='mt-5'>
 					<p className="para2">1.<span className='para1'> Forget to turn off in hurry: </span>People leaving the house in a hurry frequently forget to check if all the appliances are turned off.</p>
 					<p className="para2">2.<span className='para1'> Lack of awareness on consumption units:  </span>People aren't aware of the amount of electricity that they consume and don’t
 know ways to manage their usage. They are concerned about their electric bills since these are often higher than anticipated, and they are unsure of what caused such increased rates. Users believe that the AC is what drains power the most.</p>
