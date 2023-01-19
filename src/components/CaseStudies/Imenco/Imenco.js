@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'react-bootstrap/Image'
 // import one from '../../../assets/svg/about/overlay.svg'
-import two from '../../../assets/svg/about/IMENCO hero.svg'
+import two from '../../../assets/png/IMENCO hero.png'
 import three from '../../../assets/png/content.png'
 import four from '../../../assets/png/bulbs.png'
 import five from '../../../assets/png/process.png'
@@ -12,10 +12,10 @@ import nine from '../../../assets/png/secondary content.png'
 import ten from '../../../assets/png/CA 1.png'
 import eleven from '../../../assets/png/User Persona 1.png'
 import twelve from '../../../assets/png/User Persona 2.png'
-import thirteen from '../../../assets/png/Frame 50.png'
-import fourteen from '../../../assets/png/users flow.png'
+import thirteen from '../../../assets/png/Frame 50-1.png'
+import fourteen from '../../../assets/png/Group 36186.png'
 import fifteen from '../../../assets/png/wf.png'
-import sixteen from '../../../assets/png/visuals imenco.png'
+import sixteen from '../../../assets/png/home.png'
 import seventeen from '../../../assets/png/add new room.png'
 import eighteen from '../../../assets/png/add new device.png'
 import ninteen from '../../../assets/png/planner.png'
@@ -135,16 +135,16 @@ const Imenco = (props) => {
                 </Row>
 							</Col>
 							<Col  md={12}>
-							<p className="para1 mb-0 mt-5"> Solution 1: Connection & Control</p>
+							<p className="para1 mb-0 mt-5"> <span>&#8226;</span> Solution 1: Connection & Control</p>
               <p className="para2 m-0">a) This system will allow users to monitor their appliances' status and control them in real time.</p>
               <p className="para2 m-0">b) This application can be easily connected to any smart device owned by the user.</p>
               <p className="para2 m-0">c) Even those appliances that are not smart can be plugged into smart plugs to make it easy to track and control them.</p>
 
-              <p className="para1 mb-0 mt-5"> Solution 2: Planner & Milestone</p>
+              <p className="para1 mb-0 mt-5"> <span>&#8226;</span> Solution 2: Planner & Milestone</p>
               <p className="para2 m-0">a) Users can access planners to view the usage schedules for each device. They will get these schedules weekly and need to follow in order to reduce electricity waste.</p>
               <p className="para2 m-0">b) Charts that display users' conservation journey, progress, and future goals.</p>
 
-              <p className="para1 mb-0 mt-5">Solution 3: Insights & Motivation</p>
+              <p className="para1 mb-0 mt-5"><span>&#8226;</span> Solution 3: Insights & Motivation</p>
               <p className="para2 m-0">a) Real-time insights displaying daily consumptions, savings and carbon emissions  along with detailed statistics on each.</p>
               <p className="para2 mb-5">b) Tip of the day provides customers with an energy-saving tip each day.</p>
               <p className="para2 mb-5">This app is meant to help households reduce their electricity consumption and help them save money. It also encourages households to adopt sustainable practices and reduce their carbon footprint. It provides them with tips and advice on how to reduce their electricity consumption and save money along with resources and tools that can help them track their electricity consumption and make informed decisions on how to save energy.</p>
@@ -177,7 +177,7 @@ const Imenco = (props) => {
                 <p className="para2">To validate the problem, we gathered and analyzed the data first-hand through quantitative and qualitative analysis. The primary research helped us in understanding the complexities of the problem and its impact on the individuals by collecting data directly from the potential users.</p>
                 <p className="para2">We used two methods to conduct the primary research:</p>
                 
-				<p className="para2 mb-5"><span className='para1'>Survey : </span>In order to uncover the underlying causes of the issues by learning about potential users' behavior and attitudes regarding the issue, we developed a set of closed-ended questions to ask them. Following are the results we got:</p>
+				<p className="para2 mb-5"><span className='para1'><span>&#8226;</span> Survey : </span>In order to uncover the underlying causes of the issues by learning about potential users' behavior and attitudes regarding the issue, we developed a set of closed-ended questions to ask them. Following are the results we got:</p>
 				<Col>
                       <Image src={six} alt={'Employee Management'} style={{width:"100%", height:"100%"}} />
 				</Col>
@@ -193,7 +193,7 @@ const Imenco = (props) => {
 
 				<Row className='mt-5'>
 					<Col md={9} >
-					<p className="para2"><span className='para1'>Interview : </span>To collect detailed, in-depth data to validate the problems, we interviewed individuals who are directly affected by the given problem. As a result, by obtaining users’ perspectives and gaining insights, we got a more comprehensive understanding of the problem, which enabled us to develop a more effective solution that addresses the issues we identified and meets the needs of our users.</p>
+					<p className="para2"><span className='para1'> <span>&#8226;</span> Interview : </span>To collect detailed, in-depth data to validate the problems, we interviewed individuals who are directly affected by the given problem. As a result, by obtaining users’ perspectives and gaining insights, we got a more comprehensive understanding of the problem, which enabled us to develop a more effective solution that addresses the issues we identified and meets the needs of our users.</p>
 					<p className="para2">The following are the main takeaways from the interviews and observations:</p>
 
 					</Col>
@@ -202,16 +202,16 @@ const Imenco = (props) => {
 					</Col>
 
 					<Col className='12'>
-					<p className="para2"><span className='para1'>1. Forget to turn off in hurry: </span>To validate the problem, we gathered and analyzed the data first-hand through quantitative and qualitative analysis. The primary research helped us in understanding the complexities of the problem and its impact on the individuals by collecting data directly from the potential users.</p>
-					<p className="para2"><span className='para1'>2. Lack of awareness on consumption units:  </span>People aren't aware of the amount of electricity that they consume and don’t
+					<p className="para2">1.<span className='para1'> Forget to turn off in hurry: </span>People leaving the house in a hurry frequently forget to check if all the appliances are turned off.</p>
+					<p className="para2">2.<span className='para1'> Lack of awareness on consumption units:  </span>People aren't aware of the amount of electricity that they consume and don’t
 know ways to manage their usage. They are concerned about their electric bills since these are often higher than anticipated, and they are unsure of what caused such increased rates. Users believe that the AC is what drains power the most.</p>
-					<p className="para2"><span className='para1'>3. Making efforts is hard for people:  </span>Users trying to adopt a more sustainable lifestyle find it difficult to do so as it requires too much effort and they are unsure of what to do.</p>
-					<p className="para2"><span className='para1'>4. Misuse of the appliance: </span>People tend to switch on lights even during the daytime due to the low light level inside the room. This is usually done unconsciously early in the morning, and they let it stay on for a longer time during the earlier part of the day.</p>
-					<p className="para2"><span className='para1'>5. Management issues: </span>People co-living with roommates have management issues regarding shared resources like the use of appliances at home, which leads to taking the least responsibility over those resources and lessens the sense of ownership among them.</p>
-					<p className="para2"><span className='para1'>6. Operating the appliances improperly: </span>When people are organizing their stuff in the refrigerator or finding something, they leave it open for too long, which results in a waste of energy.</p>
-					<p className="para2"><span className='para1'>7. Using old and inefficient equipment: </span>Some people continue to use old and inefficient
+					<p className="para2">3.<span className='para1'> Making efforts is hard for people:  </span>Users trying to adopt a more sustainable lifestyle find it difficult to do so as it requires too much effort and they are unsure of what to do.</p>
+					<p className="para2">4.<span className='para1'> Misuse of the appliance: </span>People tend to switch on lights even during the daytime due to the low light level inside the room. This is usually done unconsciously early in the morning, and they let it stay on for a longer time during the earlier part of the day.</p>
+					<p className="para2">5.<span className='para1'> Management issues: </span>People co-living with roommates have management issues regarding shared resources like the use of appliances at home, which leads to taking the least responsibility over those resources and lessens the sense of ownership among them.</p>
+					<p className="para2">6.<span className='para1'> Operating the appliances improperly: </span>When people are organizing their stuff in the refrigerator or finding something, they leave it open for too long, which results in a waste of energy.</p>
+					<p className="para2">7.<span className='para1'> Using old and inefficient equipment: </span>Some people continue to use old and inefficient
 equipment, resulting in massive consumption.</p>
-					<p className="para2 mb-5"><span className='para1'>8. Comfort `{'>>'}` Sustainability: </span>Most people choose comfort over being sustainable.</p>
+					<p className="para2 mb-5">8.<span className='para1'> Comfort >> Sustainability: </span>Most people choose comfort over being sustainable.</p>
 
 					</Col>
 				</Row>
@@ -295,7 +295,8 @@ This one's better with many additional features.</p>
 			<Row className="mt-5">
 							<Col md={12}>
 								<h3 className='heading4'>Wireframing</h3>
-                <p className="para2">Before creating the final design, we further developed the application's structure and layout to map out the navigation and interface components.</p>
+                <p className="para2">Before creating the final design, we further developed the application's structure and
+				 layout to map out the navigation and interface components.</p>
 							</Col>
 							
 			<Col md={12} className='mb-5 mt-5 d-flex justify-content-center'>
