@@ -3,7 +3,7 @@ import Image from 'react-bootstrap/Image'
 // import one from '../../../assets/svg/about/overlay.svg'
 import two from '../../../assets/png/IMENCO hero.png'
 import three from '../../../assets/png/content.png'
-import four from '../../../assets/png/bulbs.png'
+import four from '../../../assets/png/bulbs.svg'
 import five from '../../../assets/png/process 1.png'
 import six from '../../../assets/png/Survey results.png'
 import seven from '../../../assets/png/survey insights.png'
@@ -130,7 +130,7 @@ const Imenco = (props) => {
                   </Col>
 
                   <Col md={4} className='d-flex justify-content-end'>
-                  <Image className='my-auto' src={four} alt={'Employee Management'} style={{width:"80%", height:"80%"}} fluid />
+                  <Image className='my-auto' src={four} alt={'Employee Management'} style={{width:"90%", height:"65%"}} fluid />
                   </Col>
                 </Row>
 							</Col>
@@ -204,13 +204,13 @@ const Imenco = (props) => {
 					<Col className='mt-5'>
 					<p className="para2">1.<span className='para1'> Forget to turn off in hurry: </span>People leaving the house in a hurry frequently forget to check if all the appliances are turned off.</p>
 					<p className="para2">2.<span className='para1'> Lack of awareness on consumption units:  </span>People aren't aware of the amount of electricity that they consume and don’t
-know ways to manage their usage. They are concerned about their electric bills since these are often higher than anticipated, and they are unsure of what caused such increased rates. Users believe that the AC is what drains power the most.</p>
+						know ways to manage their usage. They are concerned about their electric bills since these are often higher than anticipated, and they are unsure of what caused such increased rates. Users believe that the AC is what drains power the most.</p>
 					<p className="para2">3.<span className='para1'> Making efforts is hard for people:  </span>Users trying to adopt a more sustainable lifestyle find it difficult to do so as it requires too much effort and they are unsure of what to do.</p>
 					<p className="para2">4.<span className='para1'> Misuse of the appliance: </span>People tend to switch on lights even during the daytime due to the low light level inside the room. This is usually done unconsciously early in the morning, and they let it stay on for a longer time during the earlier part of the day.</p>
 					<p className="para2">5.<span className='para1'> Management issues: </span>People co-living with roommates have management issues regarding shared resources like the use of appliances at home, which leads to taking the least responsibility over those resources and lessens the sense of ownership among them.</p>
 					<p className="para2">6.<span className='para1'> Operating the appliances improperly: </span>When people are organizing their stuff in the refrigerator or finding something, they leave it open for too long, which results in a waste of energy.</p>
 					<p className="para2">7.<span className='para1'> Using old and inefficient equipment: </span>Some people continue to use old and inefficient
-equipment, resulting in massive consumption.</p>
+			equipment, resulting in massive consumption.</p>
 					<p className="para2 mb-5">8.<span className='para1'> Comfort >> Sustainability: </span>Most people choose comfort over being sustainable.</p>
 
 					</Col>
