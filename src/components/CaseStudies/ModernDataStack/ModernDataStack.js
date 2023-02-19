@@ -67,7 +67,7 @@ const ModernDataStack = () => {
 										</Col>
 										<Col md={12} className="text-start">
 										<ul className='para2'>
-											<li><small>1st version: 12 months</small></li>
+											<li><small>1st version: 12 weeks</small></li>
 											<li><small>2nd version: 10 weeks</small></li>
 										</ul> 
 										</Col>
