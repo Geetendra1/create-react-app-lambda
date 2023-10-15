@@ -1,12 +1,12 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 import './WorkSection.css'
 
 function SelectedWorkCard({ theme, key,id, slug,projectName, projectDesc, projectShortDesc, image }) {
     
     return (
-        <Fade>
+        <div>
             <a key={id} rel="noreferrer" style={{textDecoration:"none"}} href={`/case-study/${slug}`}>
                 <div className="singleBlog--image mt-2">
                     <img src={image} alt={projectName} style={{width:"100%", height:"100%" , borderRadius:'24px'}}/>
@@ -17,7 +17,7 @@ function SelectedWorkCard({ theme, key,id, slug,projectName, projectDesc, projec
                     <p style={{color: theme.tertiary}} className="para2 ">{projectDesc}</p>  
                 </div>
             </a>
-        </Fade> 
+        </div> 
     )
 }
 

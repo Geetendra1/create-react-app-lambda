@@ -1,6 +1,6 @@
 import React, { useContext, useState,useEffect } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
@@ -261,7 +261,7 @@ function Navbar({history}) {
 
                 <div onClick={handleDrawerClose}>
                     <div className='navLink--container'>
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/'
                                 smooth={true}
@@ -277,9 +277,9 @@ function Navbar({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#about'
                                 smooth={true}
@@ -293,9 +293,9 @@ function Navbar({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#resume'
                                 smooth={true}
@@ -311,9 +311,9 @@ function Navbar({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#services'
                                 smooth={true}
@@ -329,9 +329,9 @@ function Navbar({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#blog'
                                 smooth={true}
@@ -347,9 +347,9 @@ function Navbar({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#contacts'
                                 smooth={true}
@@ -363,7 +363,7 @@ function Navbar({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
                     </div>
                 </div>
             </Drawer>

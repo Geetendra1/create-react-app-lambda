@@ -2,7 +2,7 @@
 
 import React, { useContext, useState,useEffect } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
@@ -262,7 +262,7 @@ function CaseStudyNav({history}) {
 
                 <div onClick={handleDrawerClose}>
                     <div className='navLink--container-c'>
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/'
                                 smooth={true}
@@ -278,9 +278,9 @@ function CaseStudyNav({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#about'
                                 smooth={true}
@@ -294,9 +294,9 @@ function CaseStudyNav({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#resume'
                                 smooth={true}
@@ -312,9 +312,9 @@ function CaseStudyNav({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#services'
                                 smooth={true}
@@ -330,9 +330,9 @@ function CaseStudyNav({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#blog'
                                 smooth={true}
@@ -348,9 +348,9 @@ function CaseStudyNav({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#contacts'
                                 smooth={true}
@@ -364,7 +364,7 @@ function CaseStudyNav({history}) {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
                     </div>
                 </div>
             </Drawer>
