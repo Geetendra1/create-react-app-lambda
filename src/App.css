@@ -5,6 +5,9 @@
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
+.para0-green-color {
+    color: rgb(68, 131, 97);
+}
 
 .small-text {
     font-family: 'Inter';
@@ -69,6 +72,15 @@ font-weight: 300;
 font-size: 24px;
 }
 /*  */
+
+.para0 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
 .para1 {
     font-family: 'Inter';
     font-style: normal;

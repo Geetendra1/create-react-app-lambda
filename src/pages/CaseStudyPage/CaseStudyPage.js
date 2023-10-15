@@ -1,13 +1,10 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
-// import { ThemeContext } from '../../contexts/ThemeContext';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 import EmployeeManagement from '../../components/CaseStudies/EmployeeManagement/EmployeeManagement';
 import Geepack from '../../components/CaseStudies/Geepack/Geepack';
 import ModernDataStack from '../../components/CaseStudies/ModernDataStack/ModernDataStack';
 import Imenco from '../../components/CaseStudies/Imenco/Imenco';
+import DesignSystem from '../../components/CaseStudies/DesignSyatem/DesignSystem';
 import CaseStudyNav from '../../components/Navbar/CaseStudyNav'
 import {SimilarCaseStudies}  from '../../components';
 import { selectedWork } from '../../data/selectedWork';
@@ -22,7 +19,6 @@ const CaseStudyPage = ({history}) => {
     const lastSegment = history.location.pathname.split("/").pop()
     console.log('lastSegment',lastSegment);
     const themechnage = localStorage.getItem('theme')
-    // console.log('CaseStudyPage',theme);
 
     useEffect(() => {
      const themess =  localStorage.getItem('theme')
@@ -51,6 +47,9 @@ const CaseStudyPage = ({history}) => {
     )}
     {lastSegment === 'imenco' && (
       <Imenco themes={themes}/>
+    )}
+    {lastSegment === 'design' && (
+      <DesignSystem themes={themes}/>
     )}
     <SimilarCaseStudies  data={data}/>
     </>
